@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <title>숨 쉬는 나의 집, 싱그러운 집</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+
+
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="placehold nav_rogin">
+            <ul class="n_rogin_le">
+              <li><a href="#" class="n_pl"></a></li>
+              <li><a href="#" class="n_ap"></a></li>
+              <li><a href="#" class="n_in"></a></li>
+              <li><a href="#" class="n_ca"></a></li>
+              <li><a href="#" class="n_fa"></a></li>
+              <li><a href="#" class="n_ut"></a></li>
+            </ul>
+            <ul class="n_rogin_ri">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">판매자신청</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="hTop">
+          <article class="top">
+            <h1 class="h_logo"><a href="#"></a></h1>
+            <div class="placehold w_top">
+              <div class="w_top_le">
+                <span class="w_buger_btn"><a href="#"></a></span>
+                <ul>
+                  <li><a href="#" class="active">홈</a></li>
+                  <li><a href="#">커뮤니티</a></li>
+                  <li><a href="#">쇼핑</a></li>
+                  <li><a href="#">싱그런 여행</a></li>
+                  <li><a href="#">마이가든</a></li>
+                </ul>
+              </div>
+              <div class="w_top_ri">
+                <a href="#" class="my"><span></span></a>
+                <a href="#" class="cart"><span></span></a>
+                <a href="#" class="edit"><span></span></a>
+                <div class="t_search">
+                  <input type="text" placeholder="싱그러움을 검색하세요.">
+                  <a href="#" class="t_search_btn" ><span></span></a>
+                </div>
+              </div>
+            </div><!--웹상단메뉴-->
+          </article>
+    
+          <div class="m_topwrap">
+            <div class="m_top">
+              <span class="m_buger_btn"><a href="#"></a></span>
+              <a href="#"class="m_t_logo"><span></span></a>
+              <ul>
+                <li class="mark"><a href="#"><span></span></a></li>
+                <li class="cart"><a href="#"><span></span></a></li>
+              </ul>
+            </div>
+            <div class="m_placehold">
+              <div class="m_t_search">
+                <input type="text" placeholder="싱그러움을 검색하세요.">
+                <span class="t_search_btn"></span>
+              </div>
+            </div>
+          </div><!--모바일상단메뉴-->
+        </div>
+      </header>
+    <main>
+            <div class="slide">
+                <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide sd_01"></div>
+                    <div class="swiper-slide sd_02"></div>
+                    <div class="swiper-slide sd_03"></div>
+                </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
+
+            document.getElementsByClassName('swiper-pagination')[0].innerHTML = `
+                <span class="swiper-pagination-current">1</span>
+                ·
+                <span class="swiper-pagination-total">3</span>
+              `;
+            </script>
+
+        <section>
+            <ul class="icon_menu">
+                <li>
+                    <a href="#">
+                        <div class="menu_icon"><img src="img/event_view_banner_211129173958.jpg"></div>
+                        <div class="menu_text">공기정화</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu_icon"><img src="img/event_view_banneDIY.jpg"></div>
+                        <div class="menu_text">DIY/체험</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu_icon"><img src="img/event_view_bannecart.jpg"></div>
+                        <div class="menu_text">쇼핑하기</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu_icon"><img src="img/event_view_bannestory.jpg"></div>
+                        <div class="menu_text">상집사스토리</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div class="menu_icon"><img src="img/event_view_bannehouse.jpg"></div>
+                    <div class="menu_text">플랜테리어TIP</div>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div class="menu_icon new_cate"><img src="img/event_view_banner_211129172532.jpg"></div>
+                    <div class="menu_text">이벤트</div>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div class="menu_icon new_cate"><img src="img/event_view_banneGPS.jpg"></div>
+                    <div class="menu_text">싱그런 여행</div>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div class="menu_icon"><img src="img/event_view_bannemoney.jpg"></div>
+                    <div class="menu_text">혜택보기</div>
+                </a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <div class="title_wrap">
+                <h2>당신을 위한 맞춤 추천</h2>
+                <div class="setting"><a href="#">설정</a></div>
+            </div>
+        </section>
+        <section>
+            <div class="title_wrap">
+                <h2>스토리</h2>
+                <div class="more"><a href="#">더보기</a></div>
+            </div>
+            <div class="story_wrap">
+                <ul class="menu_list">
+                        <li><a class="list_active" href="#">전체</a></li>
+                        <li><a href="#">식물/플라워</a></li>
+                        <li><a href="#">플랜테리어</a></li>
+                        <li><a href="#">가드닝 용품</a></li>
+                        <li><a href="#">DIY체험</a></li>
+                        <li><a href="#">싱그런 여행</a></li>
+                        <li><a href="#">친환경라이프</a></li>
+                </ul>
+            </div>
+            <article class="story">
+                <figure>
+                    <a class="user" href="">
+                        <div class="stoy_img1 scrap">
+                            <em class="new_txt">NEW</em>
+                        </div>
+                        <figcaption>부산 제로웨이스트 샵, 마플상회</figcaption>
+                    </a>
+                    <div>
+                        <a href="">
+                            <span class="user_img1"></span>
+                            <p>싱그러운집에디터디아</p>
+                        </a>
+                    </div>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="stoy_img2 scrap">
+                            <em class="new_txt">NEW</em>
+                        </div>
+                        <figcaption>무늬한련화 파종하기</figcaption>
+                    </a>
+                    <div>
+                        <a href="">
+                            <span class="uer_img2"></span>
+                            <p>무무무</p>
+                        </a>
+                    </div>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="stoy_img3 scrap">
+                            <em class="new_txt">NEW</em>
+                        </div>
+                        <figcaption>미니 수선화 떼떼아떼떼 2</figcaption>
+                    </a>
+                    <div>
+                        <a href="">
+                            <span class="user_img3"></span>
+                            <p>쭈쭈</p>
+                        </a>
+                    </div>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="stoy_img4 scrap">
+                        </div>
+                        <figcaption>튤립 안타르티카</figcaption>
+                    </a>
+                    <div>
+                        <a href="">
+                            <span class="uer_img2"></span>
+                            <p>무무무</p>
+                        </a>
+                    </div>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="stoy_img5 scrap">
+                        </div>
+                        <figcaption>튤립 골드다이너스티</figcaption>
+                    </a>
+                    <div>
+                        <a href="">
+                            <span class="uer_img2"></span>
+                            <p>무무무</p>
+                        </a>
+                    </div>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="stoy_img6 scrap">
+                        </div>
+                        <figcaption>집에서꽃꽂이하기</figcaption>
+                    </a>
+                    <div>
+                        <a href="">
+                            <span class="uer_img2"></span>
+                            <p>무무무</p>
+                        </a>
+                    </div>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div class="stoy_img7 scrap">
+                        </div>
+                        <figcaption>향긋한 &lt;향수선화&gt; 수경재배</figcaption>
+                    </a>
+                    <divp>
+                        <a href="">
+                            <span class="user_img3"></span>
+                            <p>쭈쭈</p>
+                        </a>
+                    </divp>
+                </figure>
+                <figure>
+                    <a href="#">
+                        <div class="stoy_img8 scrap">
+                        </div>
+                        <figcaption>인천 캠핑장소, 섬뜰아래캠핑장</figcaption>
+                    </a>
+                    <div>
+                        <a href="#">
+                            <span class="uer_img2"></span>
+                            <p>무무무</p>
+                        </a>
+                    </div>
+                </figure>
+                <div>더 많은 스토리 보기 ></div>
+            </article>
+        </section>
+        <section>
+            <div class="title_wrap">
+                <h2>인기 계정 랭킹</h2>
+            </div>
+            <div class="tap_wrap">
+                <ul class="menu_list">
+                    <li><a class="list_active" href="#">주간랭킹</a></li>
+                    <li><a href="#">월간랭킹</a></li>
+                </ul>
+                <p class="date dis_none">2022.04.04~2022.04.07</p>
+            </div>
+            <div class="rank_wrap">
+                <article class="rank">
+                    <div>
+                        <span class="rank_nb">1</span>
+                        <div class="rank_img">
+                            <img src="img/220327_101738_jpeg.jpg">
+                        </div>
+                        <div class="rank_txt">
+                            <div class="rank_name">
+                                <a href="">무무무．</a>
+                                <span>팔로워</span>
+                            </div>
+                            <p class="rank_title">꽃 좋아하고 사진 좋아하는 무무무</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="rank_nb">2</span>
+                        <div class="rank_img">
+                            <img src="img/profile.jpg">
+                        </div>
+                        <div class="rank_txt">
+                            <div class="rank_name">
+                                <a href="">플라랜드</a>
+                                <span>팔로워</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rank_img"></div>
+                        <div class="rank_txt"></div>
+                    </div>
+                </article>
+                <p class="m_date hide">2022.04.04~2022.04.07</p>
+            </div>
+        </section>
+        <section>
+            <div class="title_wrap">
+                    <h2>싱그런 여행</h2>
+                    <div class="more dis_none"><a href="#">더보기</a>
+                </div>
+            </div>
+            <article>
+                <div class="trip">
+                    <a href="">
+                        <div class="trip_img">
+                            <img src="img/s210415_162410401.jpg">
+                        </div>
+                        <div class="trip_txt">
+                            <span>사문진 나루터</span>
+                            <p>#사문진 #사문진나루처 #대구산책로 #산책</p>
+                        </div>
+                        <ul class="trip_icon">
+                            <li class="trip_like dis_none">19</li>
+                            <li class="trip_scrap dis_none">11</li>
+                            <li class="trip_arrow"></li>
+                        </ul>
+                    </a>
+                    <a href="">
+                        <div class="trip_img trip2">
+                        </div>
+                        <div class="trip_txt">
+                            <span>제주마르노블랑카페</span>
+                            <p>#식물카페#카페산책#가족방문추천</p>
+                        </div>
+                        <ul class="trip_icon">
+                            <li class="trip_like dis_none">17</li>
+                            <li class="trip_scrap dis_none">7</li>
+                            <li class="trip_arrow"></li>
+                        </ul>
+                    </a>
+                    <a href="">
+                        <div class="trip_img">
+                            <img src="img/s210722_114304611.png">
+                        </div>
+                        <div class="trip_txt">
+                            <span>사문진 나루터</span>
+                            <p>#사문진 #사문진나루처 #대구산책로 #산책</p>
+                        </div>
+                        <ul class="trip_icon">
+                            <li class="trip_like dis_none">7</li>
+                            <li class="trip_scrap dis_none">6</li>
+                            <li class="trip_arrow"></li>
+                        </ul>
+                    </a>
+                    <div class="more_trip">더 많은 싱그런 여행보기 ></div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <div class="title_wrap">
+                <h2>싱싱튜브</h2>
+                <div class="more"><a href="#">더보기</a></div>
+            </div>
+            <ul class="vedio">
+                <li>
+                    <div class="yottube">
+                        <iframe src="https://www.youtube.com/embed/5oP3wyJPsZA"></iframe>
+                        <div class="time">01:00</div>
+                        <div class="scrap"></div>
+                    </div>
+                    <p>[그린데이즈 언박싱 ] 큐키트 백드롭 페인팅 DIY</p>
+                </li>
+                <li>
+                    <div class="yottube">
+                        <iframe src="https://www.youtube.com/embed/4HC7OHlLrC8"></iframe>
+                        <div class="time">00:50</div>
+                        <div class="scrap"></div>
+                    </div>
+                    <div>[식사남 TV] 군자란을 분갈이 해보자~~</div>
+                </li>
+                <li>
+                    <div class="yottube">
+                        <div class="thums img3"></div>
+                        <div class="play"></div>
+                        <div class="time">12:00</div>
+                        <div class="scrap"></div>
+                    </div>
+                    <p>[그린데이즈 식물언박싱] 1분만에 플랜테리어 준비하기</p>
+                </li>
+                <li>
+                    <div class="yottube">
+                        <iframe src="https://www.youtube.com/embed/kHSos_NcfMQ"></iframe>
+                        <div class="time">01:50</div>
+                        <div class="scrap"></div>
+                    </div>
+                    <p>[﻿랜선집들이]플랜테리어ㅣ식물집사의 하루일상 VLOG</p>
+                </li>
+                <li>
+                    <div class="yottube">
+                        <iframe src="https://www.youtube.com/embed/oA1KnWntsOA"></iframe>
+                        <div class="time">01:00</div>
+                        <div class="scrap"></div>
+                    </div>
+                    <p>[식물구경 랜선집들이]식물들의 근황 식물 맥시멀리스트</p>
+                </li>
+                <li class="dis_none">
+                    <div class="yottube">
+                        <iframe  src="https://www.youtube.com/embed/M49ggZ03P3I"></iframe>
+                        <div class="time">01:00</div>
+                        <div class="scrap"></div>
+                    </div>
+                    <p>[식사남TV] 쉽고 간결하게 알아보는 로즈마리 번식 시키는 방법 ! #로즈마리번식#로즈마리삽목#Rosemary</p>
+                </li>
+            </ul>
+        </section>
+        <!-- <div class="test">
+            <div class="tooltip"></div>
+        </div> -->
+        <section>
+            <div class="title_wrap">
+                <h2>HOT Keyword</h2>
+            </div>
+            <article class="keyword"> 
+                <ul>
+                    <li>
+                        <a href="">플랜테리어</a>
+                        <a href="">반려식물</a>
+                        <a class="other" href="">홈가드닝</a>
+                        <a href="">식물인테리어</a>
+                        <a class="other" href="">plant</a>
+                        <a href="">식물</a>
+                        <a class="other" href="">식물카페</a>
+                        <a href="">공기정화식물</a>
+                        <a href="">싱그런 여행</a>
+                        <a href="">싱그런 여행</a>
+                        <a href="">싱그런 여행</a>
+
+                    </li>
+                    <li>
+                        <a href="">화분</a>
+                        <a class="other" href="">#5월</a>
+                        <a href="">6월</a>
+                        <a class="other" href="">토분</a>
+                        <a href="">가드닝</a>
+                        <a class="other" href="">행잉플랜트</a>
+                        <a href="">베란다정원</a>
+                        <a href="">식물스타그램</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <div class="title_wrap">
+                <h2>MD's Pick</h2>
+            </div>
+            <article class="mdpick">
+                <figure>
+                    <a href="">
+                        <div>
+                            <div class="md1"></div>
+                        </div>
+                        <figcaption>
+                            <p>우디홈 화분 선반 정리대 원목 베란다 진열대
+                                 거실 다육이 받침대</p>
+                            <ul>
+                                <li class="discount">35%</li>
+                                <li class="price"><span>43,900</span>28,900</li>
+                            </ul>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div>
+                            <div class="md2"></div>
+                        </div>
+                        <figcaption>
+                            <p>흙만지는남자 인테리어화분
+                                 감성 수제 화이트 토분 화분 흙만남
+                                  동물토분 부끄부끄 문어군 토분</p>
+                            <ul>
+                                <li class="discount">10%</li>
+                                <li class="price"><span>25,000</span>22,500</li>
+                            </ul>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div>
+                            <div class="md3"></div>
+                        </div>
+                        <figcaption>
+                            <p>[수나그린] 생기 가득 열대식물 시그니처 팝팟 고사리 4종
+                                 (더피 후마타 아스파라 아비스)</p>
+                            <ul>
+                                <li class="discount">36%</li>
+                                <li class="price"><span>19,900</span>12,900</li>
+                            </ul>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div>
+                            <div class="md4"></div>
+                        </div>
+                        <figcaption>
+                            <p>스테인글라스 행운의 고래 썬캐쳐</p>
+                            <ul>
+                                <li class="discount">18%</li>
+                                <li class="price"><span>35,000</span>29,000</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </a>
+                <figure>
+                    <a href="">
+                        <div>
+                            <div class="md5"></div>
+                        </div>
+                        <figcaption>
+                            <p>페피타 햇살 쉬폰 포스터 패브릭 숲 나무 자연 풍경
+                                 감성 햇빛 가을 꾸미기 써니데이</p>
+                            <ul>
+                                <li class="discount">17%</li>
+                                <li class="price"><span>42,500</span>35,500</li>
+                            </ul>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div>
+                            <div class="md6"></div>
+                        </div>
+                        <figcaption>
+                            <p>스테인드글라스 빈티지 유리화병</p>
+                            <ul>
+                                <li class="discount">7%</li>
+                                <li class="price"><span>45,000</span>42,000</li>
+                            </ul>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div>
+                            <div class="md7"></div>
+                        </div>
+                        <figcaption>
+                            <p>Ocean Greenery 인테리어 포스터 액자 A1, A2, A3 사이즈</p>
+                            <ul>
+                                <li class="price">20,000</li>
+                            </ul>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <div>
+                            <div class="md8"></div>
+                        </div>
+                        <figcaption>
+                            <p>[그라운드120]소형화분 보라싸리 모카토분</p>
+                            <ul>
+                                <li class="discount">21%</li>
+                                <li class="price"><span>56,300</span>45,000</li>
+                            </ul>
+                        </figcaption>
+                    </a>
+                </figure>
+            </article>
+        </section>
+        <div class="w100">
+            <section>
+                <div class="title_wrap">
+                    <h2>가이드 북</h2>
+                </div>
+                <article class="guide">
+                    <ul>
+                        <li><a href=""><div class="guide1"><span class="new"></span></div></a></li>
+                        <li><a href=""><div class="guide2"></div></a></li>
+                        <li><a href=""><div class="guide3"></div></a></li>
+                        <li><a href=""><div class="guide4"></div></a></li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+        <section>
+            <div class="title_wrap">
+                <h2>싱그러움을 전해보세요</h2>
+            </div>
+            <article class="quick">
+                <div>
+                    <a href="">
+                        <ul>
+                            <li class="title">판매자 신청</li>
+                            <li class="txt">싱그러운 집과 <span>함께 해요</span></li>
+                        </ul>
+                        <div class="sp lv"></div>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <ul>
+                            <li class="title">사업자 구매회원 신청</li>
+                            <li class="txt">VVIP 혜택을 <span>누려보세요</span></li>
+                        </ul>
+                        <div class="sp gm"></div>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="placehold footWrap">
+          <div class="p_box line">
+              <span class="p_m">
+                  고객문의 : cs@cona.world</span>
+              <span>
+                  제휴문의 : cooperate@cona.world
+              </span>
+          </div>
+          <div class="footerLink">
+              <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">브랜드 스토리</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <li><a href="#">서비스 이용약관</a></li>
+              </ul>
+              <ul>
+                  <li><a href="#">고객상담</a></li>
+                  <li><a href="#">판매자 신청</a></li>
+                  <li class="f_l_last"><a href="#">사업자 구매회원 신청</a></li>
+              </ul>
+          </div>
+          <div class="p_box">
+              <span class="p_m">대표번호 : 1899-9137</span>
+              <span class="p_m">주식회사 코나</span>
+              <span class="p_m">대표이사 : 김라희</span>
+              <span class="p_m_a"><a href="#">사업자 정보확인</a></span>
+          </div>
+          <div class="p_box">
+              <span class="p_m">주소 : 대구광역시 수성구 알파시티1로 115, 2층(대흥동)</span>
+              <span class="p_m">사업자등록번호 : 532-87-01550</span>
+              <span class="p_m">통신판매업신고번호 : 2020-대구수성구-0872</span>
+              <span >Copyright©싱그러운 집 ALL RIGHTS RESERVED.</span>
+          </div>
+          <div class="p_box p_box_plh">
+              <span class="p_m">개인정보보호책임자 : 조정아</span>
+              <span >호스팅 제공자 : 주식회사 가비아씨엔에스</span>
+          </div>
+              <address>
+                  <p>NICEPAY 안전거래 서비스 : 고객님의 안전거래를 위해 현금 결제 시,
+                      저희 사이트에서 가입한 구매안전 서비스를 이용할 수 있습니다.
+                      &nbsp; <a href="#"> 가입 확인</a></p>
+                  <p>㈜코나는 통신판매중개자로서 통신판매의 당사자가 아니며, 입점업체가
+                      등록한 상품, 상품정보 및 거래에 대하여 ㈜코나에서는
+                      일체 책임을 지지 않습니다.</p>
+              </address>
+          </div>
+    </footer>
+
+</body>
+</html> 

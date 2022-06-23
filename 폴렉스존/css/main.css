@@ -1,0 +1,642 @@
+@charset "UTF-8";  
+
+    main{
+        padding-top: 70px;
+    }
+    /*인트로텍스트*/
+    .introtxt{
+        padding-top: 70px;
+    }
+    .inttWrap{
+        width: 1760px;
+        padding-top: 125px;
+        margin: auto;
+        position: relative;
+    }
+    .inttWrap .svg_wrap{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        z-index: -1;
+    }
+    .inttWrap .svg_wrap svg{
+        width: 100%;
+        height: 100%;
+    }
+    .inttWrap .svg_wrap svg>text{
+        font-size: 180px;
+        font-weight: bold;
+        stroke: rgb(109, 220, 109);
+        fill: #fff;
+    }
+    .inttWrap .svg_sub{
+        width: 1520px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        z-index: 999;
+    }
+    .inttWrap .svg_sub>p{
+        font-size: 42px;
+        line-height: 64px;
+        font-weight: bold;
+    }
+    .inttWrap .svg_sub a{
+        display: block;
+        width: 180px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 56px;
+        text-align: center;
+        border: 2px solid #000;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    /*experience*/
+    .experience{
+        width: 100%;
+        margin-top: 80px;
+    }
+    .experience article:first-of-type{
+        padding-top: 34.47916%;
+        background: url("http://pollexzone.com/images/main/mc1_img.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .experience .exp_textbox{
+        height: 300px;
+        text-align: center;
+        background: url("    http://pollexzone.com/images/main/mc1_banner.jpg") center no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #fff;
+    }
+    .experience .exp_textbox div h3{
+        width: 100%;
+        display: block;
+        font-size: 27px;
+        line-height: 40px;
+        letter-spacing: 4.94px;
+
+    }
+    .experience .exp_textbox div p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.4;
+        margin-top: 22px;
+    }
+    /*partLink*/
+    .partLink{
+        padding:185px 0;
+    }
+    .partLink h4{
+        font-size: 20px;
+        line-height: 29px;
+        font-weight: bold;
+    }
+    .partLink p{
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .partLink>div{
+        width: 1520px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .partLink>div>article{
+        width: calc(50% - 5px);
+        height: 620px;
+    }
+    .partLink>div .pl_left, .partLink>div .pl_right article{
+        position: relative;
+    }
+    .partLink>div .pl_left>div, .partLink>div .pl_right article>div{
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+        color: #fff;
+    }
+    .partLink>div .pl_left{
+        background: url("http://pollexzone.com/images/main/mc2_img1.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .partLink>div .pl_right{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .partLink>div .pl_right article{
+        width: calc(50% - 5px);
+        height: 305px;
+    }
+    .partLink>div .pl_right article:first-of-type{
+        background: url("http://pollexzone.com/images/main/mc2_img2.jpg") center no-repeat;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+    .partLink>div .pl_right article:nth-of-type(2){
+        background: url("http://pollexzone.com/images/main/mc2_img3.jpg") center no-repeat;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+    .partLink>div .pl_right article:nth-of-type(3){
+        background: url("http://pollexzone.com/images/main/mc2_img3.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .partLink>div .pl_right article:nth-of-type(4){
+        background: url("http://pollexzone.com/images/main/mc2_img5.jpg") center no-repeat;
+        background-size: cover;
+    }
+    /*point*/
+    .point{
+        width: 100%;
+        background-color: #000;
+        padding: 135px 0;
+    }
+    .point>div{
+        width: 1520px;
+        margin: auto;
+    }
+    .point>div>h2{
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 54px;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .point_list{
+        display: flex;
+        justify-content:space-between;
+    }
+    .point_list article{
+        width: calc(33.3333% - 76px);
+        color: #fff;
+    }
+    .point_list article>div{
+        width: 100%;
+        padding-top: 100%;
+    }
+    .point_list article>.p_l_01{
+        background: url("http://pollexzone.com/images/main/mc3_img1.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .point_list article>.p_l_02{
+        background: url("http://pollexzone.com/images/main/mc3_img2.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .point_list article>.p_l_03{
+        background: url("http://pollexzone.com/images/main/mc3_img3.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .point_list article>h3{
+        margin-top: 40px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .point_list article>p{
+        font-size: 15px;
+        line-height: 22px;
+        opacity: 0.6;
+        margin-top: 14px;
+    }
+    .point_list article>a{
+        display: inline-block;
+        margin-top: 50px;
+        vertical-align: top;
+        width: 120px;
+        height: 40px;
+        line-height: 38px;
+        border: 1px solid #b3b3b3;
+        box-sizing: border-box;
+        text-align: center;
+        color: #b3b3b3;
+        font-size: 14px;
+    }
+    /*center*/
+    .center{
+        position: relative;
+        padding-top: 55.8333%;
+        background: url("http://pollexzone.com/images/main/mc4_loc2.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .ctWrap{
+        position: absolute;
+        width: 1520px;
+        bottom: 150px;
+        left: 50%;
+        margin-left: -760px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .ctWrap .ct_title{
+        padding-right: 50px;
+    }
+    .ctWrap .ct_title>span{
+        display: block;
+        font-size: 20px;
+        line-height: 29px;
+        color: #39b919;
+    }
+    .ctWrap .ct_title>h2{
+        font-size: 100px;
+        line-height: 148px;
+        font-weight: 300;
+        color: #fff;
+    }
+    .ctWrap .ct_title>p{
+        font-size: 24px;
+        line-height: 40px;
+        margin-top: 28px;
+        font-weight: bold;
+        color: #fff;
+    }
+    /**/
+    .ctWrap .ct_point>div{
+        margin-top: 30px;
+    }
+    .ctWrap .ct_point a{
+        display: block;
+        text-align: center;
+    }
+    .ctWrap .ct_point a span{
+        display: inline-block;
+        width: 132px;
+        height: 132px;
+        border: 3px solid #39b919;
+        box-sizing: border-box;
+        border-radius: 100%;
+    }
+    .ctWrap .ct_point a .ct_p_mafo{
+        background:#fff url("http://pollexzone.com/images/main/mc4_icon2.png") center no-repeat;
+    }
+    .ctWrap .ct_point a .ct_p_gong{
+        background:#fff url("http://pollexzone.com/images/main/mc4_icon3.png") center no-repeat;
+    }
+    .ctWrap .ct_point a .ct_p_seo{
+        background:#fff url("http://pollexzone.com/images/main/mc4_icon1.png") center no-repeat;
+    }
+    .ctWrap .ct_point a p{
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+        color: #fff;
+        opacity: 0.5;
+    }
+    /*notice*/
+    .notice{
+        padding: 150px 0;
+        border-top: 6px solid #39b919;
+    }
+    .notiWrap{
+        width: 1520px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .notiWrap>div{
+        width: calc(50% - 40px);
+    }
+    .notiWrap>div h2{
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 29px;
+        color: #00305b;
+        margin-bottom: 20px;
+    }
+    .notiWrap>div h2>a{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        color: #999;
+    }
+    .notiWrap>div ul{
+        border-top: 2px solid #000;
+    }
+    .notiWrap>div ul li{
+        border-bottom: 1px solid #000;
+    }
+    .notiWrap>div ul li a{
+        display: block;
+        position: relative;
+        padding-right: 84px;
+        padding-left: 9px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 15px;
+        line-height: 58px;
+        font-weight: bold;
+        color: #333;
+    }
+    .notiWrap>div ul li a>span{
+        font-size: 13px;
+        line-height: 58px;
+        color: #999;
+        position: absolute;
+        right: 9px;
+        top: 0;
+    }
+
+
+@media screen and (max-width: 1920px){  
+    /*center*/
+    .center{
+        height: 1072px;
+        padding-top: 0;
+    }
+    .inttWrap{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 1640px){   
+    /*introtxt*/
+    .inttWrap{
+        width: 100%;
+    }
+    .inttWrap .svg_sub{
+        width: 100%;
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+
+
+}
+@media screen and (max-width: 1520px){
+    /*partLink*/
+    .partLink>div{
+        width: 100%;
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+    /*point*/
+    .point>div{
+        width: 100%;
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+    .point_list{
+        width: 100%;
+    }
+    /*center*/
+    .ctWrap{
+        width: auto;
+        bottom: 150px;
+        left: 50px;
+        right: 50px;
+        margin-left: 0;
+    }
+    /*notice*/
+    .notiWrap{
+        width: 100%;
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+
+
+
+
+
+}
+@media screen and (max-width: 1100px){
+    /*introtxt*/
+    .inttWrap{
+        padding-top: calc(12vw);
+    }
+    .inttWrap .svg_sub{
+        padding: 0 30px;
+    }
+    .inttWrap .svg_sub>p{
+        font-size: 32px;
+        line-height: 50px;
+        }
+    /*partLink*/
+    .partLink>div{
+        padding: 0 30px;
+    }
+        .point>div{
+        width: 100%;
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+    /*point*/
+    .point>div{
+        padding: 0 30px;
+    }
+    .point_list article{
+        width: calc(33.3333% - 20px);
+        color: #fff;
+    }
+    /*center*/
+    .center{
+        height: auto;
+        padding-top: 116%;
+    }
+    .ctWrap{
+        left: 30px;
+        right: 30px;
+    }
+    /*notice*/
+    .notiWrap{
+        padding: 0 30px;
+    }
+
+
+
+
+
+
+
+}
+@media screen and (max-width: 900px){
+    /*introtxt*/
+    .inttWrap .svg_sub>p{
+        font-size: 26px;
+        line-height: 44px;
+    }
+    /*partLink*/
+    .partLink>div{
+        display: block;
+    }
+    .partLink>div>article{
+        width: 100%;
+    }
+    .partLink>div .pl_left{
+        margin-bottom: 10px;
+    }
+
+
+
+
+   
+}
+@media screen and (max-width: 767px){
+    /*introtxt*/
+    .inttWrap .svg_sub{
+        display: block;
+        padding: 0 15px;
+    }
+    .inttWrap .svg_sub>p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .inttWrap .svg_sub a{
+        width: 130px;
+        height: 40px;
+        margin-top: 30px;
+        line-height: 36px;
+        font-size: 11px;
+    }
+    /*experience*/
+    .experience article:first-of-type{
+        padding-top: 100%;
+    }
+    .experience .exp_textbox{
+        height: 200px;
+    }
+    .experience .exp_textbox div h3{
+        font-size: 20px;
+        line-height: 29px;
+
+    }
+    .experience .exp_textbox div p{
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+    /*partLink*/
+    .partLink>div{
+        padding: 0 15px;
+    }
+    .partLink h4{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .partLink p{
+        display: none;
+    }
+    .partLink>div .pl_left>div, .partLink>div .pl_right article>div{
+        left: 15px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+     /*point*/
+    .point>div{
+        padding: 0;
+    }
+    .point>div>h2{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 40px;
+        padding-left: 15px;
+    }
+    .point_list{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .point_list::-webkit-scrollbar{ display:none; }
+    .point_list article{
+        flex-shrink: 0;
+        width: 85%;
+        margin:0 5px;
+    }
+    .point_list article>h3{
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .point_list article>p{
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 0px;
+    }
+    .point_list article>a{
+        margin-top: 40px;
+        width: 110px;
+    }
+    /*center*/
+    .center{
+        padding-top: 160%;
+    }
+    .ctWrap{
+        top:50px;
+        bottom: 50px;
+        left: 15px;
+        right: 15px;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .ctWrap .ct_title{
+        padding-right: 0;
+        width: 100%;
+    }
+    .ctWrap .ct_title>span{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .ctWrap .ct_title>h2{
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .ctWrap .ct_title>p{
+        font-size: 13px;
+        line-height: 21px;
+        margin-top: 20px;
+    }
+    /**/
+    .ctWrap .ct_point{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .ctWrap .ct_point>div{
+        margin-top: 0;
+    }
+    .ctWrap .ct_point a{
+        display: block;
+        text-align: center;
+    }
+    .ctWrap .ct_point a span{
+        width: 90px;
+        height: 90px;
+    }
+    .ctWrap .ct_point a p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    /*notice*/
+        /*notice*/
+    .notice{
+        padding: 80px 0 90px;
+    }
+    .notiWrap{
+        padding: 0 15px;
+        display: block;
+    }
+    .notiWrap>div{
+        width: 100%;
+    }
+    .notiWrap>div:last-of-type{
+        margin-top: 60px;
+    }
+
+
+
+}
