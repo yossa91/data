@@ -13,6 +13,7 @@ router.get('/',(req ,res) => {
   res.render('main');
   //메인페이지 지정
   });
+  
 //로그인
 router.get('/nowon_login_id',(req ,res) => {
   res.render("nowon_login_id");
