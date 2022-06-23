@@ -1,0 +1,435 @@
+@charset "UTF-8";   
+/*공통*/
+    body{
+        font-family: '고딕';
+    }
+    .secWrap{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .h3tt{
+    border-left: 5px solid #ffc000;
+    padding-left: 14px;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom:25px;
+    }
+    .h3subtt{
+        text-indent: 15px;
+        position: relative;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        text-align: left;
+    }
+    .h3subtt::before{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 12px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #000;
+    }
+/*pageTop*/
+    .pageTop{
+        width: 100%;
+        background: url("https://dcaf.or.kr/common/resources/images/sub/sub_bg348.png") top center no-repeat;
+    }
+    .pg_topmenu{
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+    .pg_topmenu ul{
+        width: 1200px;
+        margin:auto;
+        display: flex;
+    }
+    .pg_topmenu ul li:not(:last-of-type){
+        width: 250px;
+        border-left: 1px solid #fff;
+    }
+    .pg_topmenu ul li:last-child{
+        width: 200px;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .pg_topmenu ul a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        line-height: 39px;
+    }
+    .pg_topmenu ul .a_link{
+        background: url("https://dcaf.or.kr/common/resources/images/sub/icn_tri_down.png") no-repeat;
+        background-position: 230px center;
+    }
+    .pg_topmenu ul span{
+        display: block;
+        width: 60px;
+        padding-top: 39px;
+        cursor: pointer;
+    }
+    .pg_topmenu ul .pg_tm_print{
+        background: url("https://dcaf.or.kr/common/resources/images/sub/icn_print.png") center no-repeat;
+    }
+    .pg_topmenu ul .pg_tm_sns{
+        background: url("https://dcaf.or.kr/common/resources/images/sub/icn_sns.png") center no-repeat;
+    }
+    /**/
+    .pageTop>h2{
+        font-size: 28px;
+        line-height: 104px;
+        color: #ffc000;
+        text-align: center;
+    }
+    /**/
+    .pg_dwmenu{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .pg_dwmenu>nav ul{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255,255,255,.7);
+    }
+    .pg_dwmenu>nav ul li{
+        width: 14.28%;
+    }
+    .pg_dwmenu>nav ul li a{
+        display:block;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 50px;
+    }
+    .pg_dwmenu>nav ul .nv_on{
+        border-bottom: 2px solid #ffc000;
+        box-sizing: border-box;
+    }
+    /*소개*/
+    .pg_list article{
+        margin-bottom: 100px;
+    }
+    .pg_list>h2{
+        text-align: center;
+        font-size: 38px;
+        font-weight: bold;
+        margin-top: 60px;
+        position: relative;
+    }
+    .pg_list>h2::after{
+        content: "";
+        display: block;
+        width: 1px;
+        height: 30px;
+        background: #000;
+        margin: 20px auto;
+    }
+    .pg_list>h2 span{
+        background: #ffc000;
+        display: block;
+        position: absolute;
+        width: 75px;
+        height: 14px;
+        bottom: 60px;
+        z-index: -1;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .pg_li_intro{
+        display: flex;
+    }
+    .pg_li_intro div{
+        width: 50%;
+        background-color:#f6f6f6 ;
+    }
+    .pg_li_intro div img{
+        width: 100%;
+        vertical-align: middle;
+    }
+    .pg_li_intro div:last-child{
+        padding: 0 50px;
+        box-sizing: border-box;
+        display: flex;
+        align-content:space-evenly;
+        flex-wrap: wrap;
+    }
+    .pg_li_intro div p{
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    /*주요사업*/
+    .pg_li_project>div{
+        padding: 50px 0;
+        border: 1px solid #e5e5e5;
+        margin-bottom: -1px;
+        display: flex;
+        align-items: center;
+    }
+    .pg_li_project .pg_pj_left{
+        width: 35%;
+        display: flex;
+        align-items: center;
+    }
+    .pg_li_project .pg_pj_left span{
+        display: block;
+        width: 45%;
+        padding-top: 80px;
+        opacity: 0.3;
+    }
+    .pg_li_project>div .pg_li_pj_01{
+        background: url("https://dcaf.or.kr/common/resources/images/sub/intro-business-ico03.png") center no-repeat;
+        background-size: contain;
+    }
+    .pg_li_project>div .pg_li_pj_02{
+        background: url("https://dcaf.or.kr/common/resources/images/sub/intro-business-ico01.png") center no-repeat;
+        background-size: contain;
+    }
+    .pg_li_project>div .pg_li_pj_03{
+        background: url("https://dcaf.or.kr/common/resources/images/sub/intro-business-ico04.png") center no-repeat;
+        background-size: contain;
+    }
+    
+    .pg_li_project>div h4{
+        width: 55%;
+        font-size: 22px;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+    .pg_li_project>div div{
+        width: 65%;
+    }
+    /*찾아오시는 길*/
+    .adr table{
+        width: 100%;
+    } 
+    .adr table tr td:first-of-type{
+        text-align: center;
+        background-color: #f6f6f6;
+        padding: 14px 0;
+    }
+    .adr table tr .tb_top{
+        padding-top: 28px;
+        border-top: 1px solid #000;
+    }
+    .adr table tr td:last-of-type{
+        padding-left: 3.75%;
+    }
+    .adr table tr .tb_bot{
+        padding-bottom: 28px;
+        border-bottom: 1px solid #000;
+    }
+    /**/
+    .bus table{
+        width: 100%;
+        text-align: center;
+        border-top: 2px solid #000;
+    }
+    .bus table tr:first-of-type{
+        background-color: #f6f6f6;
+    }
+    .bus table tr td{
+        padding: 20px 0;
+        vertical-align: middle;
+    }
+    .bus table tr .td_left{
+        text-align: left;
+    }
+
+
+@media screen and (max-width: 1200px){
+    .secWrap{
+        width: 100%;
+    }
+    /*pageTop*/
+    .pageTop{
+        width: 100%;
+        background: #fff url();
+    }
+    .pg_topmenu{
+       display: none;
+    }
+    /**/
+    .pageTop>h2{
+        font-size: 18px;
+        line-height: 98px;
+        background: url("https://dcaf.or.kr/common/resources/images/sub/sub_bg348.png") top center no-repeat;
+    }
+    /**/
+    .pg_dwmenu{
+        width: 100%;
+    }
+    .pg_dwmenu>nav ul{
+        display: flex;
+        justify-content: center;
+        background-color:#fff;
+    }
+    .pg_dwmenu>nav ul li{
+        width: auto;
+        padding: 0 13px;
+    }
+    .pg_dwmenu>nav ul li a{
+        width: auto;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 46px;
+    }
+    .pg_dwmenu>nav ul .nv_on{
+        border-bottom: 3px solid #ffc000;
+    }
+    /*소개*/
+    .pg_list>h2{
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .pg_list>h2::after{
+        height: 16px;
+        margin: 12px auto 14px;
+    }
+    .pg_list>h2 span{
+        width: 38px;
+        height: 6px;
+        bottom: 35px;
+    }
+    /*주요사업*/
+    .pg_li_project>div div{
+        text-align: center;
+    }
+    .pg_li_project .pg_pj_left{
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    .pg_li_project .pg_pj_left span{
+        width: 45%;
+    }
+    .pg_li_project>div h4{
+        text-align: left;
+    }
+    .pg_li_project>div div{
+        width: 65%;
+    }
+    /*찾아오시는 길*/
+    .bus{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .bus::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    .bus::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+        border: 4px solid #ffffff;
+    }
+    .bus::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    .bus table{
+        width: 1200px;
+    }
+    
+
+
+}
+@media screen and (max-width: 770px){
+    .secWrap{
+        width: calc(100% - 30px);
+        margin: auto;
+    }
+    /*pageTop*/
+    .pageTop{
+        width: 100%;
+        background-size: contain;
+    }
+    .pg_topmenu{
+       display: none;
+    }
+    /**/
+    .pageTop>h2{
+        font-size: 18px;
+        line-height: 98px;
+    }
+    /**/
+    .pg_dwmenu>nav ul{
+        justify-content:inherit;
+        overflow-x:scroll ;
+        scrollbar-width: none;
+    }
+    .pg_dwmenu>nav ul::-webkit-scrollbar{
+        display:none; 
+    }   
+    .pg_dwmenu>nav ul li{
+        flex-shrink: 0;
+        width: auto;
+    }
+    .pg_dwmenu>nav ul li a{
+        width: auto;
+    }
+    .pg_dwmenu>nav ul .nv_on{
+        border-bottom: 3px solid #ffc000;
+    }
+    /*소개*/
+    .pg_li_intro{
+        display: block;
+    }
+    .pg_li_intro div{
+        width: 100%;
+    }
+    .pg_li_intro div:last-child{
+        padding: 4%;
+    }
+    .pg_li_intro div p{
+        padding-bottom: 30px;
+    }
+    /*주요사업*/
+    .pg_li_project .pg_pj_left{
+        flex-wrap: wrap;
+    }
+    .pg_li_project .pg_pj_left span{
+        display: block;
+        width: 100%;
+    }
+    .pg_li_project>div h4{
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+
+}
+@media screen and (max-width: 640px){
+    
+    /*주요사업*/
+    .pg_li_project>div{
+        flex-wrap: wrap;
+    }
+    .pg_li_project .pg_pj_left{
+        width: 100%;
+    }
+    .pg_li_project .pg_pj_left span{
+        width: 100%;
+    }
+    .pg_li_project>div h4{
+        width: 100%;
+        padding-bottom: 6%;
+    }
+    .pg_li_project>div div{
+        width: 100%;
+    }
+
+}

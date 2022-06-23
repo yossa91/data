@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.18.0",
+    "static": "^2.0.0"
+  },
+  "name": "project1",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/yossa91/nodeTest.git)"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": ""
+}

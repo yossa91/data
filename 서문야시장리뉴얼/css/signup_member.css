@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+main{
+    width: 1200px;
+    height: 100vh ;
+    background-color: #fff;
+    padding-top: 70px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+.mainWrap{
+    position: absolute;
+    width: 600px;
+    top:50%;
+    left: 50%;;
+    transform: translate(-50%, -50%);
+}
+.mainWrap>h2{
+    text-align: center;
+    color: #0B1EA8;
+    font-size: 35px;
+    padding-bottom: 15px;
+    border-bottom: 10px solid #0B1EA8;
+}
+.mainWrap p{
+    text-align: center;
+    padding-top:50px;
+    font-size: 24px;
+}
+/**/
+.member{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 50px;
+}
+.member a{
+    display: block;
+    width: calc(33.3333% - 6px);
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    padding:175px 0 35px ;
+    text-align: center;
+    color: #090909;
+}
+.member a p{
+    font-size: 18px;    
+    font-weight: bold;
+}
+.member .on{
+    color: #fff;
+    background-color: #0B1EA8;
+}
+.user{
+    background: url('../img/full/signup_user.png') center 65px no-repeat ;
+    background-size: auto 80px;
+}
+.seller1{
+    background: url('../img/full/signup_seller1.png') center 65px no-repeat ;
+    background-size: auto 80px;
+}
+.seller2{
+    background: url('../img/full/signup_seller2.png') center 65px no-repeat ;
+        background-size: auto 80px;
+}
+
+/**/
+.next{
+    width: 100%;
+    text-align: center;
+}
+.next a{
+    font-size: 16px;
+    padding: 7px 100px;
+    border: 0;
+    background-color: #0B1EA8;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+    main{
+        width: 100%;
+    }
+    
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .mainWrap{
+        position: absolute;
+        width: 90%;
+        top:50%;
+        left: 50%;;
+        transform: translate(-50%, -50%);
+    }
+    /**/
+    .member{
+        margin: 15px 0 40px;
+    }
+    .member div{
+        padding:100px 0 35px ;
+    }
+    .user{
+        background: url('../img/full/signup_user.png') center 50px no-repeat ;
+        background-size: auto 65px;
+    }
+    .seller1{
+        background: url('../img/full/signup_seller1.png') center 50px no-repeat ;
+        background-size: auto 65px;
+    }
+    .seller2{
+        background: url('../img/full/signup_seller2.png') center 50px no-repeat ;
+            background-size: auto 65px;
+    }
+
+   }

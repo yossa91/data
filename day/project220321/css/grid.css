@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+/*grid 4 css
+#grid{
+    width:1200px;
+    height:100%;
+    background-color: #444;
+}
+.box1, box2, box3, box4{
+    width:100%;
+    overflow:hidden;
+}
+.box1 div{
+    width:1200px;
+    height:300px;
+    background-color: #685245;
+}
+.box2 div{
+    width:600px;
+    height:300px; 
+    float:left;
+    background-color: #749814;   
+}
+.box3 .box31_3{
+    width:900px;
+    height:300px;
+    float:left;
+    background-color: #995544;
+}
+.box3 .box31_1{
+    width:300px;
+    height:300px;
+    float:left;
+    background-color: #351471;
+}
+.box4 div{
+    width:300px;
+    height:300px;
+    float:left;
+    background-color: #669142;
+}
+*/
+/*grid 6 css
+        #grid6{
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            background-color: blue;
+        }
+        .box6_1, .box6_2, .box6_321, .box6_311, .box6_411, .box6_42, .box6_51{
+            width: 100%;
+            overflow: hidden;
+        }
+        .box6_1 div{
+            width: 100%;
+            height: 300px;
+        }
+        .box6_2 div{
+            width: 600px;
+            height: 300px;
+            float: left;
+        }
+        .box6_321 .box6_321_3{
+            width: 600px;
+            height: 300px;
+            float: left;
+        }
+        .box6_321 .box6_321_2{
+            width: 400px;
+            height: 300px;
+            float: left;
+        }
+        .box6_321 .box6_321_1{
+            width: 200px;
+            height: 300px;
+            float: left;
+        }
+        .box6_3111 .box6_3111_3{
+            width: 600px;
+            height: 300px;
+            float: left;
+        }
+        .box6_3111 .box6_3111_1{
+            width: 200px;
+            height: 300px;
+            float: left;
+        }
+        .box6_411 .box6_411_4{
+            width: 800px;
+            height: 300px;
+            float: left;
+        }
+        .box6_411 .box6_411_1{
+            width: 200px;
+            height: 300px;
+            float: left;
+        }
+        .box6_42 .box6_42_4{
+            width: 800px;
+            height: 300px;
+            float: left;
+        }
+        .box6_42 .box6_42_2{
+            width: 400px;
+            height: 300px;
+            float: left;
+        }
+        .box6_51 .box6_51_5{
+            width: 1000px;
+            height: 300px;
+            float: left;
+        }
+        .box6_51 .box6_51_1{
+            width: 200px;
+            height: 300px;
+            float: left;
+        }
+*/
+
+header{
+    width: 100%;
+    height: 900px;
+    background-color: #444;
+}
+nav{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+}
+#navmenu{
+    width: 1200px;
+    height: 100px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+/*------------플롯방지----------------*/
+.ove{
+    width: 100%;
+    overflow: hidden;
+}
+/*----------------------------*/
+#run{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: darkslategrey; 
+}
+.rtitle{
+   width: 1200px;
+   height: 300px;
+}
+.search div{
+    width: 600px;
+    height: 300px;
+    background-color:darkcyan;
+}
+.buylist{
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: bisque;
+}
+.buyavi{
+    width: 600px;
+    height: 300px;
+    float: left;
+    background-color:black;  
+}
+/*----------------------------------------*/
+#history{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color:#777; 
+}
+.htitle{
+    width: 100%;
+    height: 300px;
+ }
+ .viewlist{
+     width: 600px;
+     height: 300px;
+     background-color: cornflowerblue;
+     float: left;
+ }
+ .viewlisttitle{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    float: left; 
+ }
+ .noticelist{
+    width: 600px;
+    height: 300px;
+    background-color:#444;
+    float: left;
+ }
+ .nqna{
+    width: 300px;
+    height: 300px;
+    background-color:darkorange;
+    float: left;
+ }
+ .nmap{
+    width: 300px;
+    height: 300px;
+    background-color:forestgreen;
+    float: left;
+ }
+/*----------------------------------------*/
+ #bottom{
+    width: 1200px;
+    height: 100%;
+    margin: 50px auto 0;
+    background-color:#999; 
+ }
+ .exmenu{
+    width: 300px;
+    height: 50px;
+    background-color:#000;
+    float: left;
+ }
+ .mapmenu{
+    width: 300px;
+    height: 50px;
+    background-color:#fff;
+    float: left; 
+ }
+ .exchange{
+    width: 900px;
+    height: 200px;
+    background-color:#fff;
+    float: left;
+ }
+ .weather{
+    width: 300px;
+    height: 200px;
+    background-color:#000;
+    float: left; 
+ }
+
+/*-----------------------------------*/
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+}

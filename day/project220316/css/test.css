@@ -1,0 +1,39 @@
+@charset "utf-8";
+img{
+	width: 300px;
+}
+table{
+	margin: 100px 0;
+    border: 2px solid #000;
+	border-spacing: 0;
+}
+table td{
+    border: 1px solid;
+    text-align: center;
+	padding: 10px 15px 10px 15px;
+}
+.green{
+	background-color: darkcyan;
+}
+.puple{
+	background-color: darkorchid;
+}
+.cyan{
+	background-color: aquamarine;
+}
+.pach{
+	background-color: lightsalmon;
+}
+.pink{
+	background-color: darksalmon;
+}
+.laven{
+	background-color:mediumpurple;
+	color: red;
+}
+.blank{
+	background-color: #444;
+}
+.bibi{
+	background-color:burlywood;
+}

@@ -1,0 +1,28 @@
+노원문화원
+https://www.nwcc.or.kr/main/main.php?categoryid=06&menuid=01&groupid=00&boardodr=2
+
+------
+참고
+https://nowonarts.kr/html/
+https://www.isbcc.or.kr/
+https://www.dgs.go.kr/tour/
+https://garts.kr/
+--------------------------------------
+사이즈
+--------------------------------------
+web
+가로 1280px
+개인작업 페이지 내 사이드 메뉴 가로 240px 좌측간격40px
+tablet
+가로 960px 좌우여백 30px
+사이드메뉴 삭제
+mobile
+가로 720px 좌우여백 15px
+--------------------------------------
+컬러
+--------------------------------------
+메인컬러
+#fe7a4a
+#f8f8f8
+폰트컬러
+#333

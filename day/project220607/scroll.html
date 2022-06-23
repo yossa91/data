@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+      *{
+          padding: 0;
+          margin: 0;
+      }
+      section{
+          width: 100%;
+          text-align: center;
+          height: 1100px;
+          box-sizing: border-box;
+      }
+      section>h1{
+          color: #fff;
+      }
+      section:nth-of-type(1){background-color: #457845;}
+      section:nth-of-type(2){background-color: #437fd8;}
+      section:nth-of-type(3){background-color: #d66144;}
+      section:nth-of-type(4){background-color: #d5d548;}
+      section:nth-of-type(5){background-color: #8454b5;}
+      #container{
+          opacity: 0;
+          padding-top: 100px;
+          transition-duration:2s ;
+      }
+      .show{
+          padding-top: 20px !important;
+      }
+      .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+        background-color: #ccc;
+        }
+
+        .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        }
+        #bigImg{
+            height: 500px;
+        }
+        .smallImg{
+            width: 100px;
+        }
+        .frme{
+            height: 500px;
+        }
+        .liner{
+            border: 2px solid #fff;
+        }
+
+  </style>
+  <title>test SCROLL</title>  
+</head>
+<body>
+
+    <section>
+        <h2>Animated Accordion</h2>
+        <p>Click on the buttons to open the collapsible content.</p>
+        
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+    </section>
+    <section>
+        <h1>setInterval</h1>
+        <div>
+            <h3 id="getTime"></h3>
+        </div>
+
+    </section>
+    <section id="container">
+        <h1>SLIDE SCROLL!!!</h1>
+    </section>
+    <section>
+        <h1>SET ATTRIBUTE</h1>
+        <article>
+            <div>
+                <div class="frme">
+                    <img src="https://cdn.pixabay.com/photo/2012/04/26/19/35/pears-42897_960_720.png" alt="" id="bigImg">
+                </div>
+                <div>
+                    <img src="https://cdn.pixabay.com/photo/2012/04/26/19/35/pears-42897_960_720.png" alt="" class="smallImg liner">
+                    <img src="https://cdn.pixabay.com/photo/2017/01/19/14/37/ameixoa-1992438_960_720.png" alt="" class="smallImg">
+                    <img src="https://cdn.pixabay.com/photo/2017/01/20/21/57/peach-1996022_960_720.png" alt="" class="smallImg">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/19/17/apple-154492_960_720.png" alt="" class="smallImg">
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <h1>section_05</h1>
+    </section>
+
+    <script src="./js/scroll.js">
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+
+section{
+  border: 3px solid #000;
+}
+
+section>div{
+  border: 1px solid #555;
+  margin: 5px;
+}
+.box_wrap2>div{
+  display: inline-block;
+}
+.box_wrap3>div{
+  display: inline;
+}
+.box_wrap4,.box_wrap5{
+  overflow: hidden;
+  width: 900px;
+}
+.box_wrap4>div{
+ float: left;
+}
+.box_wrap5>div{
+float: right;
+}
+#boxing{
+  width: 1440px;
+  overflow: hidden;
+  background-color:#444;
+}
+#boxing div{
+  float: left;
+  width: 335px;
+  height: 260px;
+  margin: 20px 0 20px 20px;
+  background-color: #000;
+}

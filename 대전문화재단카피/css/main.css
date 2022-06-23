@@ -1,0 +1,659 @@
+@charset "UTF-8";   
+/*공통*/
+main{
+    /*배경 이미지때문에 생기는 스크롤 제거*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.scWrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.h3_title{
+    width: 100%;
+    position: relative;
+}
+.h3_title>h3{
+    padding-top: 112px;
+    font-size: 48px;
+    font-weight: 300;
+}
+.h3_title>p{
+    font-size: 20px;
+    margin-top: 5px;
+    color: #3a4e5e;
+    font-weight: 300;
+}
+/*section1_*/
+.board{
+    width: 100%;
+    height: 796px;
+    padding: 42px 0 0;
+    background-color: #f3f3f5;
+}
+.tab_third{
+    display: flex;
+}
+.tab_third li{
+    width: 33.333%;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding: 11px 0;
+}
+.tab_third a{
+    font-size: 20x;
+    font-weight: bold;
+    color: #a2a2a2;
+}
+.tab_third .active_underline{
+    border-bottom: 4px solid #ff9f00;
+}
+.tab_third .active_underline a{
+    font-size: 23px;
+    color: #000;
+}
+/**/
+.bnr_list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 121px;
+    padding-bottom: 80px;
+}
+.bnr_list li{
+    width: 280px;
+    transition: transform 0.3s;
+}
+.bnr_list li:not(:last-of-type){
+    margin-right: 20px;
+}
+.bnr_list img{
+    width: 100%;
+}
+.bnr_list li:not(:first-child):hover{
+    transform:translate(0,-50px);
+}
+/**/
+.bnr_dot{
+    display: flex;
+    justify-content: center;
+}
+.bnr_dot li{
+    width: 14px;
+    height: 14px;
+    border: 2px solid #7d7d7d;
+    box-sizing: border-box;
+    border-radius:20px;
+    margin:0 5px;
+}
+.bnr_dot .active_dot{
+    width: 42px;
+    background-color: #7d7d7d;
+}
+/*section2_*/
+.info>.scWrap{
+    position: relative;
+}
+.info>.scWrap::before{
+    display: block;
+    content: "";
+    width: 480px;
+    padding-top: 478px;
+    position:absolute;
+    right: -300px;
+    top:-200px;
+    background: url("https://dcaf.or.kr/common/resources/images/main/deco_gly2.png") center no-repeat;
+    z-index: -999;
+}
+.info>.scWrap::after{
+    display: block;
+    content: "";
+    width: 480px;
+    padding-top: 478px;
+    position:absolute;
+    left: -350px;
+    bottom:-300px;
+    background: url("https://dcaf.or.kr/common/resources/images/main/deco_gly2.png") center no-repeat;
+    z-index: -999;
+}
+.info{
+    width: 100%;
+}
+.h3_title>a{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #4a789a;
+    font-size: 20px;
+    padding: 15px 48px;
+    border: 1px solid #4a789a;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.h3_title>a:hover{
+    border: 2px solid #4a789a;
+    box-sizing: border-box;
+    padding: 14px 47px;
+    background:#fff url("https://dcaf.or.kr/common/resources/images/sub/ico-main-artisthouse.png") 10px center no-repeat;
+}
+.info_menu{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info_menu li{
+    width: calc(16.66% - 16px);
+}
+.info_menu li a{
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 53px;
+    border: 1px solid #dcdcdc;
+    color: #dcdcdc;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.info_menu .active_info{
+    border: 3px solid #1d5681;
+    color: #1d5681;
+}
+.info_list{
+    width: 100%;
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.info_list>div{
+    width: calc(25% - 18px);
+    margin-bottom: 24px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+.info_list>div>.i_ho_link{
+    position: absolute;
+    top:-5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: 214px;
+    background:gray url("../img/lnik.png") center no-repeat;
+    opacity: 0;
+}
+.info_list>div>.i_ho_link>img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.info_list>div>.i_ho_link:hover{
+    box-shadow: 5px 5px 5px rgb(136, 136, 136, 0.3);
+    opacity: 1;
+}
+
+.info_list>div>a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.info_list>div h4{
+    width: 100%;
+    padding: 70px 10px 16px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info_list>div .i_state{
+    width: 123px;
+    display: block;
+    margin: 0 auto;
+    line-height: 32px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+}
+.info_list>div .i_state_pr{
+    background-color: #bfbfbf;
+}
+.info_list>div .i_state_in{
+    background-color: #f29a09;
+}
+.info_list>div .i_date{
+    width: 100%;
+    color: #5c5c5c;
+    font-size: 16px;
+    margin:30px 0 20px;
+}
+.info_list>div>a .i_stic{
+    position: absolute;
+    display: block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    top: 10px;
+    right: 9px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 20;
+}
+.info_list>div .i_stic_g{
+    background-color: #2b80bf;
+}
+.info_list>div .i_stic_j{
+    background-color: #2c978e;
+}
+.info_list>div .i_stic_h{
+    background-color: #9c7427;
+}
+/*section3_*/
+.place{
+    position: relative;
+}
+.place::before{
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 309px;
+    position:absolute;
+    right:0;
+    bottom:100px;
+    background-color: #f3f3f5;
+    z-index: -999;
+}
+.place::after{
+    display: block;
+    content: "";
+    width: 361px;
+    padding-top: 359px;
+    position:absolute;
+    right: -200px;
+    bottom:-100px;
+    background: url("https://dcaf.or.kr/common/resources/images/main/deco_gly1.png") center no-repeat;
+    z-index: -10;
+}
+.placeList{
+    margin: 83px 0 116px 0;
+}
+.placeList ul{
+    display: flex;
+    justify-content: space-between;
+}
+.placeList ul li{
+    width: calc(16.6666% - 1px);
+}
+.placeList ul a{
+    display: block;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 221px 0;
+    transition: background-color 1s;
+    animation: mymove 3s;
+}
+@keyframes mymove {
+    0% {transform: rotateY(90deg);}
+    100% {transform: rotateY(0deg);}
+}
+.placeList ul .pl_01{
+    background:gray url("https://dcaf.or.kr/common/resources/images/main/bg_culist1.png") center no-repeat;
+    background-size: cover;
+}
+.placeList ul .pl_02{
+    background:gray url("https://dcaf.or.kr/common/resources/images/main/bg_culist3.png") center no-repeat;
+    background-size: cover;
+}
+.placeList ul .pl_03{
+    background:gray url("https://dcaf.or.kr/common/resources/images/main/bg_culist2.png") center no-repeat;
+    background-size: cover;
+}
+.placeList ul .pl_04{
+    background:gray url("https://dcaf.or.kr/common/resources/images/main/bg_culist4.png") center no-repeat;
+    background-size: cover;
+}
+.placeList ul .pl_05{
+    background:gray url("https://dcaf.or.kr/common/resources/images/main/bg_culist5.png") center no-repeat;
+    background-size: cover;
+}
+.placeList ul .pl_06{
+    background:gray url("https://dcaf.or.kr/common/resources/images/main/bg_culist6.png") center no-repeat;
+    background-size: cover;
+}
+.placeList ul a:hover{
+    background-color: rgba(3, 67, 139, 0.5);
+    background-size: cover;
+}
+.placeList ul p{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    color: #fff;
+}
+/*section4_*/
+.otherLink{
+    background: linear-gradient(to left, #fff 70%, #7a7a7a 30%);
+}
+.o_link{
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+}
+.o_link div{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.o_link div h4{
+    display: block;
+    width: 200px;
+    text-align: center;
+    line-height:60px ;
+    font-size: 16px;
+    color: #fff;
+}
+.o_link div ul{
+    display: flex;
+    width: 920px;
+    background-color: #fff;
+    align-items: center;
+    height: 60px;
+    justify-content: space-evenly;
+}
+.o_link div span{
+    display: block;
+    width:60px;
+    padding-top: 60px;
+    background:url("https://dcaf.or.kr/common/resources/images/common/cir_next.png") center no-repeat;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .scWrap{
+        width: 100%;
+    }
+    .h3_title{
+        width: 100%;
+        position: relative;
+    }
+    .h3_title>h3{
+        padding-top: 24px;
+        font-size: 6.253125vmin;
+        text-align: center;
+    }
+    .h3_title>p, .h3_title span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+        line-height: 1.272727;
+        font-size: 3.4375vmin;
+    }
+
+    /*section1_*/
+    .board{
+        width: 100%;
+        height: 100%;
+        padding: 0 0 60px;
+    }
+    .tab_third ul{
+        align-items: center;
+    }
+    .tab_third li{
+        border-bottom: 2px solid #fff;
+        padding: 0;
+    }
+    .tab_third a{
+        font-size: 3vmin;
+    }
+    .tab_third .active_underline{
+        border-bottom: 3px solid #ff9f00;
+    }
+    .tab_third .active_underline a{
+        font-size: 3.5vmin;
+    }
+    /**/
+    .bnr_list{
+        flex-wrap: nowrap;
+        overflow-x:scroll;
+        padding-top: 20px;
+        padding-bottom: 0;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    .bnr_list::-webkit-scrollbar{ display:none; }
+    .bnr_list li{
+        flex-shrink: 0;
+        width: 35%;
+        transition: none;
+    }
+    .bnr_list li:first-child{
+        display: none;
+    }
+    .bnr_list li:not(:last-of-type){
+        margin-right: 10px;
+    }
+    .bnr_list img{
+        width: 100%;
+    }
+    .bnr_list li:not(:first-child):hover{
+        transform:none;
+    }
+    /**/
+    .bnr_dot{
+        display:none;
+    }
+
+    /*section2_*/
+    .info>.scWrap{
+        position: inherit;
+    }
+    .info>.scWrap::before{
+        display: none;
+    }
+    .info>.scWrap::after{
+        display: none;
+    }
+    
+    .h3_title>a{
+        display: block;
+        width: 50%;
+        position: inherit;
+        margin:20px auto;
+        font-size: 3.4375vmin;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .h3_title>a:hover{
+        padding: 10px 0;
+        border: 1px solid #4a789a;
+        background:#fff url();
+    }
+    .info_menu{
+        justify-content:center;
+        width: 100%;
+        margin: 41px 0 34px;
+        overflow-x: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    .info_menu::-webkit-scrollbar{ display:none; }
+    .info_menu li {
+        width: 100px;
+    }
+    .info_menu li a{
+        text-align: center;
+        display: block;
+        font-size: 3.9vmin;
+        font-weight:400;
+        line-height: 7vmin;
+        border: 0;
+        border-top: 2px solid #dcdcdc;
+        border-bottom: 2px solid #dcdcdc;
+
+    }
+    .info_menu .active_info{
+        border: 0;
+        border-top: 2px solid #dcdcdc;
+        border-bottom: 2px solid #1d5681;
+        color: #1d5681;
+    }
+
+    .info_list{
+        width: 100%;
+        margin-top: 56px;
+        display: flex;
+        justify-content: space-between;
+        overflow-x:scroll;
+        flex-wrap:nowrap;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    .info_list::-webkit-scrollbar{ display:none; }
+    .info_list>div{
+        width: 45%;
+        margin-bottom: 0;
+        margin-right:15px ;
+    }
+    .info_list>div>.i_ho_link{
+       display: none;
+    }
+    .info_list>div>.i_ho_link>img{
+        display: none;
+    }
+    .info_list>div>.i_ho_link:hover{
+        box-shadow:0;
+        opacity: 1;
+    }
+    .info_list>div>a{
+        width: 100%;
+    }
+    .info_list>div h4{
+        width: 100%;
+        padding: 14px 10px 16px;
+        font-size: 3.59375vmin;
+    }
+    .info_list>div .i_state{
+        width: 38.620689%;
+        padding: 1.5px 0;
+        font-size: 3.125vmin;
+        margin: 23px auto 21px;
+    }
+    .info_list>div .i_date{
+        width: auto;
+        margin:30px 0 20px;
+        padding: 14px 10px 16px;
+        font-size: 3.59375vmin;
+    }
+    .info_list>div>a .i_stic{
+       display: none;
+    }
+
+    /*section3_*/
+    .place{
+        background-color: #f3f3f5;
+        margin-top: 45px;
+    }
+    .place::before{
+        display: none;
+    }
+    .place::after{
+        display:none;
+    }
+
+    .placeList{
+        margin: 21px 0 0 0;
+    }
+    .placeList ul{
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 60px);
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .placeList ul li{
+        width: calc(33.333% - 1px);
+        margin-top: 1px;
+    }
+    .placeList ul a{
+        display: block;
+        width: 100%;
+        height: 24.6875vmin;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 20% 0 0;
+        transition: none;
+        animation:none;
+    }
+    @keyframes mymove {
+        0% {transform: rotateY(90deg);}
+        100% {transform: rotateY(0deg);}
+    }
+    .placeList ul .pl_01{
+        background-color: rgba(3, 67, 139, 0.7);
+        background-position: top;
+    }
+    .placeList ul .pl_02{
+        background-color: rgba(3, 67, 139, 0.7);
+        background-position: top;
+    }
+    .placeList ul .pl_03{
+        background-color: rgba(3, 67, 139, 0.7);
+        background-position: top;
+    }
+    .placeList ul .pl_04{
+        background-color: rgba(3, 67, 139, 0.7);
+        background-position: top;
+    }
+    .placeList ul .pl_05{
+        background-color: rgba(3, 67, 139, 0.7);
+        background-position: top;
+    }
+    .placeList ul .pl_06{
+        background-color: rgba(3, 67, 139, 0.7);
+        background-position: top;
+    }
+    .placeList ul a:hover{
+        background-color: rgba(3, 67, 139, 0.7);
+        background-size: cover;
+    }
+    .placeList ul p{
+        font-size: 4vmin;
+        line-height: 5vmin;
+    }
+    /*section4_*/
+    .otherLink{
+       display: none;
+       
+    }
+
+}
+@media screen and (max-width: 975px){
+
+    .placeList ul{
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .placeList ul li{
+        width: calc(50% - 1px);
+        margin-top: 1px;
+    }
+    
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>testWeb</title>
+    
+  <style>
+      #list{
+          border: 1px solid brown;
+          width: 300px;
+          padding: 40px 20px;
+      }
+      #todoList{
+          width: 300px;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          border-bottom: 1px solid gray;
+          padding: 0 15px;
+          box-sizing: border-box;
+          font-size: 16px;
+          line-height: 30px;
+          margin-bottom: 10px;
+      }
+      .btn{
+          width: 300px;
+          border: 0;
+          font-size: 16px;
+          color: #fff;
+          background-color: brown;
+          line-height: 27px;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+  </style>
+  
+</head>
+<body>
+
+  <div id="list">
+      <input type="text" id="todoList" >
+      <button type="button" class="btn" onclick="todo()">할일추가</button>
+        <h5>할일목록</h5>
+      <ul id="addlist">
+          
+      </ul>
+  </div>
+
+
+  <script type="text/javascript" src="./js/addlist.js" ></script>
+</body>
+</html>
+

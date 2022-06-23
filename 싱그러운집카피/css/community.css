@@ -1,0 +1,850 @@
+@charset "UTF-8";
+/*공동*/
+*{
+    letter-spacing: -2px;
+}
+.h2title{
+    line-height: 57px;
+    font-size: 23px;
+    margin-top: 50px;
+}
+.wwrap{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.more{
+    position: absolute;
+    right: 0;
+    top:20px;
+    padding-right: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #009a3e;
+    background: url("https://www.shouse.garden/images/common/arrow04_r.png") center right no-repeat;
+    background-size: 7px auto;
+    cursor: pointer;
+}
+.m_more{
+    display: none;
+}
+/**/
+.rank{
+    position: relative;
+}
+.rank .rank_date{
+    position: absolute;
+    top: 18px;
+    right: 0;
+    line-height: 20px;
+    font-size: 15px;
+    color: #808080;
+}
+/**/
+.rank_menu ul{
+    width: 100%;
+    display: flex;
+    overflow: scroll;  
+    scrollbar-width: none;
+}
+.rank_menu ul::-webkit-scrollbar{
+    display:none; 
+}
+.rank_menu ul li{
+    margin-right: 8px;
+}
+.rank_menu ul li{
+    flex-shrink: 0;
+}
+.rank_menu ul a{
+    display: block;
+    padding: 0 13px;
+    line-height: 37px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    color: #4d4d4d;
+    border-radius: 4px;
+}
+.rank_menu ul .r_on{
+    color: #fff;
+    background-color: #009a3e;
+    
+}
+/**/
+.rank_list_wrap{
+    width: calc(100% - 40px);
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+.rank_user{
+    width: calc(33.333% - 13px);
+    padding: 17px 0;
+    background-color:#f8f8f8 ;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.rank_user>span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: #009a3e;
+    border-radius: 4px 0 4px 0;
+}
+.rank_user .r_u_img>a{
+    flex-shrink: 0;
+    display: block;
+    width: 70px;
+    padding-top: 70px;
+    border: 1px solid #d9d9d9;
+    border-radius: 100%;
+    margin: 0 20px 0 30px;
+
+}
+.rank_user .r_u_info p>a{
+    font-size: 18px;
+    color: #4d4d4d;
+}
+.rank_user .r_u_info p>a>span::before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    width: 4px;
+    height: 4px;
+    background-color: #b3b3b3;
+    border-radius: 100%;
+}
+.rank_user .r_u_info p>a>span{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 14px;
+    height: 24px;
+    font-size: 13px;
+    color: #009a3e;
+    position: relative;
+}
+.rank_user .r_u_info p:last-child{
+    padding-top: 10px;
+    font-size: 15px;
+    color: #808080;
+}
+.rankWrap>hr{
+    opacity: 0.3;
+    margin-top: 50px;
+}
+ /*주간인기스토리*/
+.week_board{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.w_item{
+    width: calc(25% - 10px) ;
+    margin-bottom: 30px;
+}
+.w_item a{
+    color: #4d4d4d;
+}
+.w_item a>p{
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.w_item a div:first-child{
+    width: 100%;
+    padding-top: 66.6%;
+    position: relative;
+    border-radius: 4px;
+    background-size: cover;
+}
+.w_item a div:first-child::after{
+    display: block;
+    content: "";
+    width: 40px;
+    padding-top: 47px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: url("https://www.shouse.garden/images/ico/scrap.png") center no-repeat;
+    background-size: 31px auto;
+}
+.w_item a .w_item01{
+    background: url("https://www.shouse.garden/data/photo_list/s220413_12135514.jpeg") center no-repeat;
+}
+.w_item a .w_item02{
+    background: url("https://www.shouse.garden/data/photo_list/s220411_12554114.jpg") center no-repeat;
+}
+.w_item a .w_item03{
+    background: url("https://www.shouse.garden/data/photo_list/s220411_1959084464.jpeg") center no-repeat;
+}
+.w_item a .w_item04{
+    background: url("https://www.shouse.garden/data/photo_list/s220411_1214547306.jpeg") center no-repeat;
+}
+.w_item a .w_item05{
+    background: url("https://www.shouse.garden/data/photo_list/s220409_1507164464.jpeg") center no-repeat;
+}
+.w_item a .w_item06{
+    background: url("https://www.shouse.garden/data/photo_list/s220406_162742611.jpg") center no-repeat;
+}
+.w_item a .w_item07{
+    background: url("https://www.shouse.garden/data/photo_list/s220405_1422537306.jpeg") center no-repeat;
+}
+.w_item a .w_item08{
+    background: url("https://www.shouse.garden/data/photo_list/s220403_1608084464.jpeg") center no-repeat;
+}
+.w_item .w_item_user{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.w_item .w_item_user>span{
+    flex-shrink: 0;
+    display: block;
+    width: 35px;
+    padding-top: 35px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+}
+.w_item .w_item_user>.w_i_u01{
+    background: url("https://www.shouse.garden/data/profile/220411_112605_jpg") center no-repeat;
+    background-size: cover;
+}
+.w_item .w_item_user>.w_i_u02{
+    background: url("https://www.shouse.garden/data/profile/220411_112605_jpg") center no-repeat;
+    background-size: cover;
+}
+.w_item .w_item_user>.w_i_u03{
+    background: url("https://www.shouse.garden/data/profile/210802_143646_jpeg") center no-repeat;
+    background-size: cover;
+}
+.w_item .w_item_user>.w_i_u04{
+    background: url("https://www.shouse.garden/data/profile/220327_101738_jpeg") center no-repeat;
+    background-size: cover;
+}
+.w_item .w_item_user>.w_i_u05{
+    background: url("https://www.shouse.garden/data/profile/220411_112605_jpg") center no-repeat;
+    background-size: cover;
+}
+.w_item .w_item_user>.w_i_u06{
+    background: url("https://www.shouse.garden/data/profile/210226_142333_png") center no-repeat;
+    background-size: cover;
+}
+.w_item .w_item_user>.w_i_u07{
+    background: url("https://www.shouse.garden/data/profile/220327_101738_jpeg") center no-repeat;
+    background-size: cover;
+}
+.w_item .w_item_user>.w_i_u08{
+    background: url("https://www.shouse.garden/data/profile/210802_143646_jpeg") center no-repeat;
+    background-size: cover;
+}
+.w_item .w_item_user>p{
+    font-size: 15px;
+    padding-left:15px;
+}
+/*주간인기사진*/
+.photoList{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.photoList ul{
+    width: calc(25% - 15px);
+}
+.photoList ul li{
+    margin-top: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.photoList ul li::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 41px;
+    padding-top: 47px;
+    right: 15px;
+    bottom:15px;
+    background:url("https://www.shouse.garden/images/ico/scrap.png") center no-repeat ;
+    background-size: 31px auto;
+}
+.photoList ul img{
+    width: 100%;
+}
+/*가이드북*/
+.guideWrap{
+    width: 100%;
+    margin: 80px 0;
+    padding: 60px 0 80px;
+    background-color: #f2f2f2;
+}
+.guide_list{
+    width: 1200px;
+    margin: auto;
+}
+.guide_list .g_book_list{
+    display: flex;
+    justify-content: space-between;
+}
+.guide_list .g_book_list div{
+    width: calc(25% - 15px);
+}
+.guide_list a{
+    display: block;
+    width: 100%;
+    padding-top:130%;  
+}
+.guide_list>div .g_b_01{
+    background:url("https://www.shouse.garden/data/tour/211213_093812_png") no-repeat;
+    background-size: cover;
+}
+.guide_list>div .g_b_02{
+    background:url("https://www.shouse.garden/data/tour/211213_093741_png") no-repeat;
+    background-size: cover;
+}
+.guide_list>div .g_b_03{
+    background:url("https://www.shouse.garden/data/tour/211213_093707_png") no-repeat;
+    background-size: cover;
+}
+.guide_list>div .g_b_04{
+    background:url("https://www.shouse.garden/data/tour/211213_093642_png") no-repeat;
+    background-size: cover;
+}
+/*싱싱튜브*/
+.stubeList{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.stubeList>div{
+    width: calc(25% - 15px);
+}
+.stubeList .st_iframe{
+    width: 100%;
+    padding-top: 50%;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.stubeList .st_iframe>iframe{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.stubeList .st_iframe>.st_time{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    padding: 0 7px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 0 4px 0 4px;
+}
+.stubeList .st_iframe>.st_mark{
+    position: absolute;
+    display: block;
+    width: 41px;
+    height: 47px;
+    right: 10px;
+    bottom: 10px;
+    background:url("https://www.shouse.garden/images/ico/scrap.png") center no-repeat;
+    background-size: 31px auto;
+}
+.stubeList>div p{
+    font-size: 14px;
+    margin-top: 21px;
+    color:#4d4d4d;
+}
+/*매거진*/
+.magaList{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.magaList div{
+    width: calc(33.33% - 13px);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.megaList a{
+    display: block;
+    width: 100%;
+}
+.m_l_01 img, .m_l_02 img, .m_l_03 img{
+    width: 100%;
+}
+/*묻고 답하기*/
+.qnaList{
+    width: 100%;
+}
+.qnaList ul li{
+    border-bottom: 1px solid #d9d9d9;
+}
+.qnaList ul li:last-child{
+    border-bottom:0;
+}
+.qnaList a{
+    display: block;
+    display: flex;
+    width: 100%;
+    padding: 34px 150px 34px 34px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.qnaList a .qna_photo{
+    flex-shrink: 0;
+    width: 54px;
+    padding-top: 54px;
+    border: 1px solid #d9d9d9;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+.qnaList a .q_p_01{
+    background: url("https://www.shouse.garden/data/profile/profile.jpg") center no-repeat;
+    background-size: cover;
+}
+.qnaList a .q_p_02{
+    background: url("https://www.shouse.garden/data/profile/220305_115205_jpeg") center no-repeat;
+    background-size: cover;
+}
+.qnaList a .q_p_03{
+    background: url("https://www.shouse.garden/data/profile/profile.jpg") center no-repeat;
+    background-size: cover;
+}
+.qnaList .qna_txt{
+    width: 100%;
+    overflow: hidden;
+}
+.qnaList a .q_title{
+    font-size: 14px;
+    line-height: 23px;
+    color: #808080;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.qnaList a .q_count{
+    font-size: 16px;
+    line-height: 25px;
+    color: #4d4d4d;
+}
+
+
+@media only screen and (max-width: 1246px) {
+    /*공통*/
+    .wwrap{
+        width: calc(100% - 46px);
+        margin: auto;
+    }
+    .more{
+        padding-right: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #009a3e;
+        background-size: 5px auto;
+    }
+    /**/
+    .rank_menu ul{
+        padding-right: 15px;
+    }
+    .rank_menu ul li{
+        margin-right: 6px;
+    }
+    .rank_menu ul a{
+        padding: 0 9px;
+        line-height: 33px;
+        font-size: 13px;
+    }
+    .rank .rank_date{
+        top: 15px;
+    }
+    /**/
+    .rank_list_wrap{
+        width: 100%;
+        margin: 21px auto 0;    
+    }
+    .rank_user{
+        width: calc(33.333% - 9px);
+        padding: 16px 0;
+    }
+    .rank_user>span{
+        font-size: 11px;
+        width: 17px;
+        line-height: 17px;
+    }
+    .rank_user .r_u_img>a{
+        width: 50px;
+        padding-top: 50px;
+        margin: 0 15px 0 20px;
+    }
+    .rank_user .r_u_info p>a{
+        font-size: 15px;
+    }
+    .rank_user .r_u_info p>a>span::before{
+        top: 6px;
+        left: 3px;
+        width: 3px;
+        height: 3px;
+    }
+    .rank_user .r_u_info p>a>span{
+        height: 18px;
+        font-size: 12px;
+    }
+    .rank_user .r_u_info{
+        overflow: hidden;
+    }
+    .rank_user .r_u_info p:last-child{
+        display: inline-block; 
+        width: 100%;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    /*주간인기스토리*/
+    .w_item{
+        margin-bottom: 21px;
+        overflow: hidden;
+    }
+    .w_item a>p{
+        width: 100%;
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    .w_item a div:first-child::after{
+        width: 29px;
+        padding-top: 34px;
+        background-size: 22px auto;
+    }
+    .w_item .w_item_user{
+        margin-top: 11px;
+    }
+    .w_item .w_item_user>span{
+        width: 25px;
+        padding-top: 25px;
+    }
+    .w_item .w_item_user>p{
+        font-size: 14px;
+        padding-left:10px;
+    }
+    /*주간인기사진*/
+    .photoList ul{
+        width: calc(25% - 10px);
+    }
+    .photoList ul li{
+        margin-top: 21px;
+    }
+    .photoList ul li::after{
+        width: 29px;
+        padding-top: 34px;
+        right: 5px;
+        bottom: 5px;
+        background-size: 22px auto;
+    }
+    /*가이드북*/
+    .guideWrap{
+        margin: 56px 0;
+        padding: 42px 0 56px;
+    }
+    .guide_list{
+        width: calc(100% - 46px);
+        margin: auto;
+    }
+    /*싱싱튜브*/
+    .stubeList>div{
+        width: calc(25% - 10px);
+    }
+    .stubeList .st_iframe>.st_time{
+        padding: 0 5px;
+        line-height: 18px;
+        font-size: 11px;
+    }
+    .stubeList .st_iframe>.st_mark{
+        width: 29px;
+        height: 34px;
+        right: 5px;
+        bottom: 5px;
+        background-size: 22px auto;
+    }
+    .stubeList>div p{
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    /*묻고 답하기*/
+    .qnaList a{
+        padding: 24px 100px 24px 24px;
+    }
+    .qnaList a .qna_photo{
+        width: 40px;
+        padding-top: 40px;
+        margin-right: 20px;
+    }
+    .qnaList a .q_title{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .qnaList a .q_count{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+
+
+
+
+    
+
+
+}
+@media only screen and (max-width: 767px) {
+    /*공통*/
+    .wwrap{
+        width: calc(100% - 30px);
+        margin: auto;
+    }
+    .h2title{
+        margin-top: 50px;
+    }
+    .more{
+        display: none;
+    }
+    .m_more{
+        display: block;
+        width: 233px;
+        margin: 30px auto 0;
+        text-align: center;
+        font-size:14px;
+        line-height: 39px;
+        color: #4d4d4d;
+        border-radius: 30px;
+        padding-right: 18px;
+        box-sizing: border-box;
+        background: #d9d9d9 url("https://www.shouse.garden/images/common/arrow05_r.png") 170px center no-repeat;
+        background-size: 6px auto;
+    }
+    /**/
+    .rank_menu ul li{
+        margin-right: 8px;
+    }
+    .rank_menu ul a{
+        padding: 0 14px;
+        line-height: 37px;
+        font-size: 14px;
+    }
+    .rank .rank_date{
+        top: 110%;
+        right: calc(50% - 75px);
+    }
+    /**/
+    .rank_list_wrap{
+        width: 100%;
+        padding-right: 15px;
+        margin: 21px auto 0;
+        overflow: scroll;  
+        scrollbar-width: none;
+    }
+    .rank_list_wrap::-webkit-scrollbar{
+        display:none; 
+    }
+    .rank_user{
+        width: 70%;
+        flex-shrink: 0;
+        margin-right: 15px;
+        padding: 12px 0;
+    }    
+    .rank_user>span{
+        font-size: 12px;
+        width: 20px;
+        line-height: 20px;
+    }
+    .rank_user .r_u_img>a{
+        width: 46px;
+        padding-top: 46px;
+        margin: 0 10px 0 20px;
+    }
+    .rank_user .r_u_info p>a{
+        font-size: 14px;
+    }
+    .rank_user .r_u_info p>a>span::before{
+        top: 5px;
+        left: 4px;
+        width: 3px;
+        height: 3px;
+    }
+    .rank_user .r_u_info p>a>span{
+        height: 18px;
+        font-size: 11px;
+    }
+    .rank_user .r_u_info p:last-child{
+        font-size: 11px;
+        padding-top: 0;
+    }
+    .rankWrap>hr{
+        display: none;
+    }
+       /*주간인기스토리*/
+    .w_item{
+        width: calc(50% - 7px) ;
+        margin-bottom: 30px;
+    }
+    .w_item a>p{
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 11px;
+    }
+    .w_item a div:first-child::after{
+        width: 33px;
+        padding-top: 37px;
+        background-size: 19px auto;
+    }
+    .w_item .w_item_user{
+        margin-top: 11px;
+    }
+    .w_item .w_item_user>span{
+        width: 30px;
+        padding-top: 30px;
+    }
+    .w_item .w_item_user>p{
+        font-size: 14px;
+    }
+    .week_board .w_i_hid{
+        display: none;
+    }
+    /*주간인기사진*/
+    .photoList{
+        flex-wrap: wrap;
+    }
+    .photoList ul{
+        width: calc(50% - 7px);
+    }
+    .photoList ul li{
+        margin-top: 20px;
+    }
+    .photoList ul li:nth-child(n+2){
+        display: none;
+    }
+    .photoList ul li::after{
+        width: 29px;
+        padding-top: 34px;
+        right: 5px;
+        bottom: 5px;
+        background-size: 22px auto;
+    }   
+    /*가이드북*/
+    .guideWrap{
+        margin: 50px 0 0 0;
+        padding: 35px 0 40px;
+    }
+    .guide_list{
+        width: 100%;
+    }
+    .g_book_list{
+        width: 100%;
+        overflow: scroll;  
+        scrollbar-width: none;
+    }
+    .g_book_list::-webkit-scrollbar{
+        display:none; 
+    }
+    .guide_list .g_book_list{
+    }
+    .guide_list .g_book_list div{
+        width: 57%;
+        flex-shrink: 0;
+        margin-right: 20px;
+    }
+    .guide_list a{
+        display: block;
+        width: 100%;
+        padding-top:130%;  
+    }
+    /*싱싱튜브*/
+    .stubeList{
+        flex-wrap: wrap;
+    }
+    .stubeList>div{
+        width: calc(50% - 7px);
+        margin-bottom: 20px;
+    }
+    .stubeList .st_iframe>.st_time{
+        padding: 0 7px;
+        line-height: 20px;
+        font-size: 10px;
+    }
+    .stubeList .st_iframe>.st_mark{
+        width: 33px;
+        height: 37px;
+        right: 2px;
+        bottom: 2px;
+        background-size: 19px auto;
+    }
+    .stubeList>div p{
+        font-size: 13px;
+        margin-top: 11px;
+    }
+   /*매거진*/
+    .magaList{
+        width: 100%;
+        display: block;
+    }
+    .magaList div{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    /*묻고 답하기*/
+    .qnaList a{
+        padding: 16px 0;
+    }
+    .qnaList a .qna_photo{
+        width: 57px;
+        padding-top: 57px;
+        margin-right: 16px;
+    }
+    .qnaList a .q_title{
+        font-size: 13px;
+        line-height: 20px;
+        height: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        word-wrap: break-word; 
+        display: -webkit-box; 
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical;
+    }
+    .qnaList a .q_count{
+        font-size: 13px;
+        line-height: 34px;
+    }
+
+
+
+
+
+
+}

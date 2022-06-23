@@ -1,0 +1,24 @@
+(메인)
+https://www.nwcc.or.kr/main/index.php
+
+
+
+------
+(소개페이지)
+https://www.nwcc.or.kr/main/main.php?categoryid=06&menuid=01&groupid=00&boardodr=2
+유한나
+
+----
+(이달의행사)
+https://www.nwcc.or.kr/main/main.php?categoryid=02&menuid=01&groupid=00
+노원기
+
+---
+(게시판+글확인+글작성)
+https://www.nwcc.or.kr/main/main.php?categoryid=05&menuid=02&groupid=00&boardodr=2
+백경민
+
+---
+(강좌신청 / 성북문화원)
+https://www.isbcc.or.kr/program/program-all
+정지수

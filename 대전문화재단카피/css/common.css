@@ -1,0 +1,394 @@
+@charset "UTF-8";   
+/*공통*/
+a{
+    color: #000;
+}
+/**/
+header{
+    width: 100%;
+    position: relative;
+}
+.hd_menu{
+    position: absolute;
+    top:30px;
+    left:3.4%;
+}
+.hd_menu ul{
+    display: flex;
+}
+.hd_menu ul a{
+    flex-shrink: 0;
+    display: block;
+    min-width: 110px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    line-height: 28px;
+}
+.hd_menu ul li:not(:last-of-type){
+    margin-right: 12px;
+}
+.h_m_month{
+    border: 1px solid #ee0f62;
+}
+.h_m_life{
+    border: 1px solid #2f6bb1;
+}
+.h_m_art{
+    border: 1px solid #ffc000;
+}
+.h_m_place{
+    border: 1px solid #000;
+}
+/**/
+.hd_user{
+    position: absolute;
+    top: 37px;
+    right: 3%;
+    display: flex;
+    align-items: center;
+}
+.hd_user ul{
+    display: flex;
+    margin-right: 30px;
+}
+.hd_user ul li{
+    border: 1px solid #a6a8ab;
+    box-sizing: border-box;
+}
+.hd_user ul li:not(:last-of-type){
+    border-right: 0;
+}
+.hd_user ul a{
+    display: block;
+    width: 28px;
+    text-align: center;
+    line-height: 23px;
+    font-size: 13px;
+    color: #a6a8ab;
+}
+.hd_user ul a:hover{
+    color: #000;
+}
+.hd_user .rogin{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-right: 30px;
+}
+.hd_user .i_search{
+    display: block;
+    width: 16px;
+    padding-top: 16px;
+    background: url("https://dcaf.or.kr/common/resources/images/common/icn_search.png") center no-repeat;
+}
+/**/
+#hTop{
+    width: 1200px;
+    padding: 30px 0;
+    margin: auto;
+}
+#hTop a{
+    display: block;
+    margin: auto;
+    width: 277px;
+    padding-top: 65px;
+    background: url("https://dcaf.or.kr/common/resources/images/common/logo.png") center no-repeat;
+}
+/*nav*/
+nav{
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #e5e5e6;
+}
+#nvMenu{
+    width: 1200px;
+    margin: auto;
+}
+#nvMenu ul{
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+}
+#nvMenu ul li{
+    width: 16.66%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+#nvMenu ul a{
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 63px;
+}
+/**/
+.nv_menu .search{
+    display: none;
+}
+.nv_menu{
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 3%;
+}
+.nv_menu .bugermenu a{
+    display: block;
+    width: 26px;
+    overflow: hidden;
+}
+.nv_menu .bugermenu span{
+    display: block;
+    padding-top:  2px;
+    background-color: #000;
+    float: right;
+}
+.nv_menu .bugermenu span:first-child{
+    width: 100%;
+}
+.nv_menu .bugermenu span:nth-child(2){
+    width: 80%;
+    margin: 7px 0;
+}
+.nv_menu .bugermenu span:nth-child(3){
+    width: 60%;
+}
+/*footer*/
+footer{
+    background-color: #333;
+}
+footer .f_top{
+    width: 100%;
+    border-bottom: 1px solid #717171;
+}
+footer .f_top ul{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .f_top ul li{
+    width: 16.666%;
+    text-align: center;
+}
+footer .f_top a{
+    color: rgba(255,255,255,.4);
+    font-size: 14px;
+}
+footer .f_top .t_menu_circle{
+    display: block;
+    margin: auto;
+    width: 130px;
+    padding: 2px 0;
+    border: 1px solid #51b5ff;
+    border-radius: 20px;
+    color: #51b5ff;
+}
+.f_bot{
+    width: 1200px;
+    margin: auto;
+}
+.f_bot .f_botwrap {
+    width: 100%;
+    position: relative;
+}
+.f_bot .f_botwrap ul{
+    width: calc(100% - 140px);
+    padding:36px 0 22px 200px;
+    box-sizing: border-box;
+    background: url("https://dcaf.or.kr/common/resources/images/common/logo3.png") no-repeat;
+    background-position: 0 36px ;
+}
+.f_bot .f_botwrap ul li{
+    line-height: 1.42857;
+    color: rgba(255,255,255,.4);
+    font-size: 14px;
+}
+.f_bot .f_botwrap ul li:first-child{
+    margin-bottom: 17px;
+    color: #fff;
+}
+.f_bot .f_botwrap ul span:first-child::after{
+    content: ",";
+}
+.f_bot .f_mark{
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+}
+
+
+
+
+@media screen and (max-width: 1280px){
+    #nvMenu ul{
+        padding: 0 138px;
+        box-sizing: border-box;
+    }      
+}
+@media screen and (max-width: 1200px){
+    /**/
+    .hd_menu{
+        width: 100%;
+        position: absolute;
+        top:8px;
+        left:0;
+    }
+    .hd_menu ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hd_menu ul a{
+        min-width: 150px;
+        padding: 0 5px;
+        font-size: 12px;
+        line-height: 23px;
+    }
+    /**/
+    .hd_user{
+        top: 75px;
+        right: 0;
+    }
+    .hd_user ul{
+        display: none;
+    }
+    .hd_user .rogin{
+        margin-right: 5px;
+    }
+    .hd_user .i_search{
+        display: none;
+    }
+    /**/
+    #hTop{
+        width: 100%;
+        padding:60px 0;
+        margin: 0 0;
+    }
+    #hTop a{
+        margin: 0 0 0 10px;
+        width: 114px;
+        padding-top: 33px;
+        background-size: cover;
+    }
+    /*nav*/
+    #nvMenu{
+        display: none;
+    }
+    /**/
+    .nv_menu .search{
+        display: block;
+    }
+    .nv_menu{
+        position: absolute;
+        top: -40px;
+        right:10px;
+        display: flex;
+        align-items: center;
+    }
+    .nv_menu .search{
+        width: 266px;
+        border: 1px solid #d2d2d2;
+        border-radius:26px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nv_menu .search>input{
+        width: 230px;
+        line-height: 26px;
+        font-size: 16px;
+        padding-left: 15px;
+        box-sizing: border-box;
+        border: 0;
+        background-color: transparent;
+    }
+    .nv_menu .search>input:focus{
+        outline: none;
+    }
+    .nv_menu .search span a{
+        display: block;
+        width: 26px;
+        padding: 26px 10px 0 0;
+        background: url("https://dcaf.or.kr/common/resources/images/common/icn_search.png") center no-repeat;
+        background-size: 12px auto;
+    }
+    .nv_menu .bugermenu a{
+        width: 23px;
+    }
+    .nv_menu .bugermenu span:nth-child(2){
+        margin: 5px 0;
+    }
+    /*footer*/
+    footer .f_top ul{
+        padding: 14px 0 17px;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    footer .f_top ul li{
+        width: 33.3333%;
+        margin-bottom: 8px;
+    }
+    footer .f_top a{
+        font-size: 2.9vmin;
+    }
+    footer .f_top .t_menu_circle{
+        width: 60%;
+        padding: 1px 0;
+    }
+    .f_bot{
+        width:100%
+    }
+    .f_bot .f_botwrap ul{
+        width: 100%;
+        padding:11px 8px 26px 2%;
+        background-size: 20.3125vmin auto;
+        background-position: 12px 7px;
+    }
+    
+    .f_bot .f_botwrap ul li{
+        line-height: 1.42857;
+        color: rgba(255,255,255,.4);
+        font-size: 2.8125vmin;
+    }
+    .f_bot .f_botwrap ul li:first-child{
+        margin-bottom: 17px;
+        color: #fff;
+    }
+    .f_bot .f_botwrap ul li:first-child span{
+        margin-left: 30.3125vmin;
+        font-size: 3.125vmin;
+        display: block;
+    }
+    .f_bot .f_botwrap ul span:first-child::after{
+        content: "";
+    }
+    .f_bot .f_botwrap ul li:last-child{
+        color: #fff;
+    }
+    .f_bot .f_mark{
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 10px;
+        right: 22px;
+        bottom: auto;
+    }
+
+
+
+
+
+
+
+}

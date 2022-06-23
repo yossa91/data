@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css">
+
+  <style>
+        body{
+            background-color: #333;
+        }
+        .btn{
+            border: 0;
+            padding: 0;
+            display: block;
+            background-color: #333;
+            color: #fff;
+            font-size: 18px;
+            line-height: 28px;
+            width: 200px;
+            text-align: center;
+            margin: 30px auto 0;
+            cursor: pointer;
+        }
+        .box{
+            width: 500px;
+            margin:  50px auto 0;
+            padding: 0 20px 50px;
+            background-color: #fff;
+        }
+        .box>h3{
+            text-align: center;
+            font-size: 18px;
+            line-height: 100px;
+            border-bottom: 1px solid #333;
+            font-weight: bold;
+            color: #333;
+        }
+        .box p{
+            font-size: 14px;
+            line-height: 1;
+        }
+        .box p:not(:first-of-type){
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #a1a1a1;
+        }
+        .box input{
+            margin: 0;
+            padding: 0 10px;
+            font-size: 16px;
+            line-height: 25px;
+            box-sizing: border-box;
+            border: 1px solid #d9d9d9;
+            }
+        .box input::placeholder{
+            color: #a1a1a1;
+        }
+        .box .w100{
+            width: 100%;
+        }
+        .box .w70{
+            width: 70%;
+        }
+        .box .w30{
+            width: 35%;
+        }
+        .slct{
+            font-size: 16px;
+            height: 25px;
+            border: 1px solid #979797;
+            background-color: #979797;
+            color: #fff;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        .sw30{
+            width: 20%;
+        }
+        .sw35{
+            width: 27%;
+        }
+  </style>
+
+  <title>testJS</title>  
+</head>
+<body>  
+    <div class="box">
+        <h3>회원가입</h3>
+        <form action="" name="signUp">
+            <p>* 이름</p>
+            <input type="text" name="name" class="import w100" placeholder="이름을 입력해주세요.">
+            <p>* 아이디</p>
+            <input type="text" name="id" class="import w100" placeholder="아이디를 입력해주세요.">
+            <p>* 비밀번호</p>
+            <input type="password" name="psw" class="import w100" placeholder="비밀번호를 입력해주세요.">
+            <p>* 비민번호확인</p>
+            <input type="password" name="psw_ch" class="import w100" placeholder="비밀번호를 확인해주세요.">
+            <p>* 생년월일</p>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name = "year" class="import w30" placeholder='ex)1990'>
+            <span>년</span>
+            <select name="month" id="" class="slct sw30">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <span>월</span>
+            <select name="day" id="" class="slct sw30">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+            </select>
+            <span>일</span>
+            <p>* 휴대폰</p>
+            <select name="phone_f" class="slct sw30">
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="017">017</option>
+                <option value="019">019</option>
+            </select>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name = "phone" class="import w70" placeholder='"-"없이 숫자만 입력해주세요.'>
+            <p>이메일</p>
+            <input type="text" name="mail" class="w30">
+            <input type="text" name="mail_adr" class="w30">
+            <select name="mail_adr_slt" id="mail_last" class="slct sw35">
+                <option value="">직접입력</option>
+                <option value="@naver.com">@naver.com</option>
+                <option value="@gmail.com">@gmail.com</option>
+                <option value="@hanmail.com">@hanmail.com</option>
+                <option value="@nate.com">@nate.com</option>
+            </select>
+
+            <button type="button" onclick="subM();" class="btn">회원가입</button>
+        </form>
+    </div>
+
+
+
+
+  <script type="text/javascript" src="./js/form.js" ></script>
+</body>
+</html>
