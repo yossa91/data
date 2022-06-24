@@ -1,11 +1,11 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-    host : "localhost",
-    user : "root",
-    password : "1234",
+    host : "us-cdbr-east-05.cleardb.net",
+    user : "b9ec100646d261",
+    password : "7d2cb632",
     port : "3306",
-    database : "nwconduct",
+    database : "heroku_49b42ca63042fa9",
     dateStrings : 'date'
 })
 //메인
@@ -40,13 +40,13 @@ exports.search_process = function(seachbox, searchText, callback){
 //페이지추가
 exports.insertMemo = function(title,description,upload, callback){
     //파일유무 확인
-    if(upload !== undefined){
+    if(upload != undefined || upload != null || upload != ''){
     connection.query(`INSERT INTO status(title,description,upload,day,hit) VALUES('${title}','${description}','${upload}',now(),'0')`, (err, result) => {
         if(err) throw err;
         callback();
     });
     }else{
-        connection.query(`INSERT INTO status(title,description,upload,day,hit) VALUES('${title}','${description}',1,now(),'0')`, (err, result) => {
+        connection.query(`INSERT INTO status(title,description,day,hit) VALUES('${title}','${description}',now(),'0')`, (err, result) => {
             if(err) throw err;
             callback();
         });
