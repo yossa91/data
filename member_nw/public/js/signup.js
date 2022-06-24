@@ -53,7 +53,6 @@ subBtn.addEventListener('click',()=>{
         document.querySelector('.checkPsw').innerHTML = '*비밀번호를 확인해 주세요';
     }else{
         alert('가입이 완료되었습니다.');
-        location.href = 'index.html';
     }    
 });
 
