@@ -61,7 +61,6 @@ router.post('/logindata',(req, res, next) =>{
       db.login(userId,userPsw, (result) =>{
         if(result == true){
           console.log(`${userId}님이 로그인되었습니다.`);
-          res.render('main');
         }else{
           console.log('로그인정보를 확인하세요');
           res.render('nowon_login');
