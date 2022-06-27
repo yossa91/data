@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            margin: auto;
+        }
+        tr,td{
+            border: 1px solid #333;
+        }
+    </style>
 </head>
 <body>
     <div class="memobox">
@@ -21,7 +32,7 @@
             </tr>
             <% rows.forEach((row, index) => { %>
                 <tr>
-                    <td><%= row.content %></td>
+                    <td><pre><%= row.content %></pre></td>
                     <td><%= row.created %></td>
                     <td><%= row.updated %></td>
                     <td><input type="button" onclick="javascript:location.href='/updateMemo?id=<%= row.id%>'" value="수정"></td>
