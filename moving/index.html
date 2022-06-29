@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="./css/basic.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <title>main</title>
+    
+    
+</head>
+<body>
+
+    <main>
+        <div class="boxWrap">
+            <div class="id">
+                <div class="id_border">
+                    <span>ID : </span>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="psw">
+                <div class="psw_border">
+                    <span>PSW : </span>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        var id = document.querySelector('.id');
+        var psw = document.querySelector('.psw');
+        
+    var i=1;        
+    id.addEventListener("mouseover", function () {
+        id.style.background=`conic-gradient(#8b22ff 0% 100%, #ffffff 100% 100%)`;
+        document.getElementById("hz").style.WebkitAnimationName = "hzmove2"; // Chrome, Safari, and Opera
+
+        document.getElementById("hz").style.animationName = "hzmove2";
+                
+    });
+    id.addEventListener("mouseout", function () {
+        id.style.background=`conic-gradient(#8b22ff 0% 0%, #ffffff 0% 100%)`;
+    });
+
+
+
+
+
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+
+
+    
+</body>
+</html>
