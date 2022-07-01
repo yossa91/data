@@ -2,40 +2,91 @@ main{
     background-color: rgb(86, 45, 124);
     height: 100vh;
 }
+
 .boxWrap{
     display: inline-block;
     padding: 100px 200px;
     background-color: #fff;
 }
-.boxWrap>div{
+.boxWrap>.id{
+    width: 254px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.bf, .af{
+    display: none;
+}
+.before{
+    display: block;
+    position: absolute;
+    background-color: #8b22ff;
+    animation-name: before;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+.before_b{
+    left: 5px; top: 0; bottom: 2px; right: 0;
+    display: block;
+    position: absolute;
+    background-color: #8b22ff;
+    animation-name: before_b;
+    animation-delay: 0.2s;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+.after{
+    display: block;
+    position: absolute;
+    background-color: #8b22ff;
+    animation-duration: 0.1s;
+    animation-name: after;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+}
+.after_b{
+    display: block;
+    position: absolute;
+    background-color: #8b22ff;
+    animation-name: after_b;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes before {
+    0%   {left: 5px; top: 0; bottom: 42px; right: 249px;}
+    50%   {left: 5px; top: 0; bottom: 42px; right: 0;}
+    100%   {left: 5px; top: 0; bottom: 2px; right: 0;}
+}
+@keyframes before_b {
+    0%   {left: 5px; top: 0; bottom: 2px; right: 0;}
+    50%   {left: 5px; top: 0; bottom: 42px; right: 0;}
+    100%   {left: 5px; top: 0; bottom: 42px; right: 249px;}
+}
+@keyframes after {
+    0%   {right: 0; left: 254px; bottom: 0; top:42px;}
+    50%   {right: 0; left: 0; bottom: 0; top:42px;}
+    100%   {right: 0; left: 0; bottom: 0; top:0;}
+}
+@keyframes after_b { 
+    0%   {right: 0; left: 0; bottom: 0; top:0;}
+    50%   {right: 0; left: 0; bottom: 0; top:42px;}
+    100%   {right: 0; left: 254px; bottom: 0; top:42px;}
+}
+.boxWrap .id .id_border{
     width: 250px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
-}
-.boxWrap>.id{
-    background: conic-gradient(#8b22ff 0% 0%, #ffffff 0% 100%);
-    margin-bottom: 10px;
-    transform: 0.5s;
-    
-}
-
-
-.boxWrap>.psw{
-    background-color: rgb(0, 193, 64);
-    transition-duration: 2s;
-}
-.boxWrap>div>div{
-    width: 246px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
     border-radius: 4px;
+    background-color: #fff;
+    z-index: 10;
 }
+
 input{
     border: 0;
     margin: 0;
