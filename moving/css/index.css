@@ -19,24 +19,9 @@ main{
     background: conic-gradient(#8b22ff 0% 0%, #ffffff 0% 100%);
     margin-bottom: 10px;
     transform: 0.5s;
-    transition: 0.3s;
+    
 }
-/* Chrome, Safari, Opera */
 
-@-webkit-keyframes hzmove {
-
-100% {background: conic-gradient(#8b22ff 0% 0%, #ffffff 0% 100%);}
-  
-}
-  
-  
-@keyframes hzmove {
-  
-    from {left: 0px;}
-  
-    to {left: 200px;}
-  
-  }
 
 .boxWrap>.psw{
     background-color: rgb(0, 193, 64);
