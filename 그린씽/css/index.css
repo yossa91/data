@@ -1,7 +1,7 @@
 @charset "UTF-8";
     body{
         font-family: 'Noto Sans KR', sans-serif , 'arial'; 
-        font-weight: ;
+
         color: #333;
     }
     /*공용*/
@@ -74,7 +74,7 @@
         margin-top: 8px;
         display: block;
         font-size: 14px;
-        font-weight: bold;
+        font-weight: 500;
         padding: 5px 10px 5px;
     }
     .h_t_wrap .h_t_user li:last-of-type a{
@@ -555,12 +555,129 @@
         white-space:nowrap;
         
     }
+    /*인트로갤러리 section_gall*/
+    .gl_box .bl_b_1 .b1_2::after{
+        content: '';
+        display: block;
+        width: 200px;
+        padding-top: 140px;
+
+    }
 
 
 
 }
 @media screen and (max-width: 960px){
+    /*header*/
+    /*상단메뉴_언어*/
+    .h_t_wrap .h_t_lang{
+        display: none;
+    }
+    .mob_h_t_lang{
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 12px 0 0 0;
+        outline: none;
+        font-size: 14px;
+    }
+    .mob_h_t_lang:focus{
+        outline: none;
+    }
+    /*하단메뉴,메인메뉴*/
+    .h_m_wrap{
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+    .h_m_wrap>a{
+        display:none;
+    }
+    .h_m_wrap>ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .h_m_wrap>ul>li{
+        position: relative;
+        padding: 0;
+    }
+    .h_m_wrap>ul>li>a{
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        color: #333;
+        padding: 10px 0;
+    }
+    /*메인_인트로 section_intro*/
 
+    .itr_menu>ul{
+        padding-top: 90px;
+        width: 100%;
+        display: flex;
+        justify-content:space-around;
+    } 
+    .itr_menu>ul>li{
+        width: calc(33.333% - 20px);
+    }
+    .itr_menu>ul>li>a{
+        width: 100%;
+    }
+    .itr_menu>ul>li:not(:first-of-type){
+        margin-left: 0;
+    }
+    /*인트로갤러리 section_gall*/
+    .gl_box article{
+        display: flex;
+        justify-content: space-between;
+    }
+    .gl_box article div{
+        width: inherit;
+        height: 450px;
+    }
+    /*gall 첫줄*/
+    
+    .gl_box .bl_b_1{
+        margin-bottom: 10px;
+    }
+    .gl_box .bl_b_1 .b1_1{
+        width: calc(30% - 5px);
+        background: url('../img/main_txt_01.png')center no-repeat;
+        background-size: cover;
+    }
+    .gl_box .bl_b_1 .b1_2{
+        width: calc(70% - 5px);
+        position: relative;
+        padding: 90px 0 0 90px;
+        box-sizing: border-box;
+        background: linear-gradient( #659E35 85%, #fff 10%);
+        color: #fff;
+    }
+    .gl_box .bl_b_1 .b1_2>h4{
+        font-size: 20px;
+    }
+    .gl_box .bl_b_1 .b1_2>p{
+        font-size: 18px;
+        opacity: 0.75;
+        padding: 5px 0 30px 20px;
+        font-weight:lighter;
+    }
+    /*gall 두째줄*/
+    .gl_box .bl_b_2 .b2_1>div{
+        width: inherit;
+    }
+    .gl_box .bl_b_2 .b2_1>.b2_1_1{
+       display: none;
+    }
+    .gl_box .bl_b_2 .b2_1>.b2_1_2{
+        width: 300px;
+    }
+    .gl_box .bl_b_2 .b2_2{
+        width: calc(100% - 310px);
+        background: url('../img/main_txt_02.png') center no-repeat;
+        background-size: cover;
+    }
 
 
 
@@ -570,6 +687,74 @@
 
 
 }
+@media screen and (max-width: 730px){
+     /*공용*/
+    .wtitle{
+        text-align: center;
+        font-size: 28px;
+        font-weight: 500;
+        padding: 100px 0 40px;
+    }
+    .wtitle>p{
+        font-size: 20px;
+    }
+    /*메인_인트로 section_intro*/
+    .itr_menu>ul>li{
+        width: calc(33.333% - 10px);
+    }
+    .itr_menu>ul>li>a{
+        width: 100%;
+        font-size: 20px;
+    }
+    .itr_menu>ul>li:not(:first-of-type){
+        margin-left: 0;
+    }
+    .itr_menu .itr_m_lent{
+        background: #fff url('../img/main_qick_use.png') center 30px no-repeat;
+        background-size: 120px;
+    }
+    .itr_menu .itr_m_return{
+        background: #fff url('../img/main_qick_change.png') center 30px no-repeat;
+        background-size: 120px;
+    }
+    .itr_menu .itr_m_point{
+        background: #fff url('../img/main_qick_center.png') center 30px no-repeat;
+        background-size: 120px;
+    }
+    /*인트로갤러리 section_gall*/
+    .wave::before{
+        background-size: 50px auto;
+    }
+    /*gall 첫줄*/
+    .gl_box .bl_b_1 .b1_2{
+        padding: 60px 20px 0 40px;
+    }
+    .gl_box .bl_b_1 .b1_2::before{
+        width: 30px;
+        padding-top: 30px;
+        top:20px;
+        left: 20px;
+    }
+    .gl_box .bl_b_1 .b1_2>h4{
+        font-size: 20px;
+    }
+    .gl_box .bl_b_1 .b1_2>p{
+        font-size: 18px;
+        opacity: 0.75;
+        padding: 5px 0 30px 20px;
+        font-weight:lighter;
+    }
+
+
+
+
+
+
+
+
+}
+
+
 @media screen and (max-width: 540px){
 
 }
