@@ -18,11 +18,12 @@ document.addEventListener('scroll', function() {
             document.querySelector('#hTop').style.display = 'none';
             document.querySelector('.nv_menu').className = 'nv_menuDw';
             document.getElementsByTagName('header')[0].style.height = document.getElementsByTagName('nav')[0].clientHeight + 'px';
-        }else{
-            change = 0;
+        }else if(500 < scrollHei){   
+            for(var i = 0; i<list.length; i++){
+                list[i].style.animationName = 'mymove';
+            }
         }
     }else if(150 > scrollHei){   
-        
         if(change == 0){
             change = 1;
             document.querySelector('#nvMenuDw').id = "nvMenu";
@@ -32,13 +33,6 @@ document.addEventListener('scroll', function() {
             document.querySelector('#hTop').style.display = 'block';
             document.querySelector('.nv_menuDw').className = 'nv_menu';
             document.getElementsByTagName('header')[0].style.height =  document.getElementsByTagName('header')[0].scrollHeight+ 'px';
-        }else{
-            change = 1;
-        }
-
-    }else if(placeTop - 300 < scrollHei){   
-        for(var i = 0; i<list.length; i++){
-            list[i].style.animationName = 'mymove';
         }
     }
 
