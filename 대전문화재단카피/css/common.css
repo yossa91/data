@@ -5,6 +5,14 @@ a{
 }
 /**/
 header{
+    position: fixed;
+    width: 100%;
+    height: 199px;
+    top: 0;
+    background-color: #fff;
+    z-index: 999;
+}
+.hd{
     width: 100%;
     position: relative;
 }
@@ -121,7 +129,7 @@ nav{
     display: block;
     text-align: center;
     width: 100%;
-    font-size: 21px;
+    font-size: 19px;
     font-weight: bold;
     line-height: 63px;
 }
@@ -155,6 +163,78 @@ nav{
 .nv_menu .bugermenu span:nth-child(3){
     width: 60%;
 }
+
+
+.downMenu{
+    background-color: #000;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.downMenu>h1{
+    display: block;
+    margin-left: 3%;
+}
+.downMenu .dm_logo{
+    margin-top: 10px;
+    display: block;
+    width: 132px;
+    padding-top: 38px;
+    background: url('https://dcaf.or.kr/common/resources/images/common/logo2.png') center no-repeat;
+    background-size: cover;
+}
+
+#nvMenuDw ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+#nvMenuDw ul li{
+    padding: 5px;
+    box-sizing: border-box;
+}
+#nvMenuDw ul a{
+    width: 130px;
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 63px;
+    color: #fff;
+}
+.nv_menuDw{
+    position: relative;
+    margin-top: 27px;
+    margin-right: 3%;
+}
+.nv_menuDw .bugermenu a{
+    display: block;
+    width: 26px;
+    overflow: hidden;
+}
+.nv_menuDw .bugermenu span{
+    display: block;
+    padding-top:  2px;
+    background-color: #fff;
+    float: right;
+}
+.nv_menuDw .bugermenu span:first-child{
+    width: 100%;
+}
+.nv_menuDw .bugermenu span:nth-child(2){
+    width: 80%;
+    margin: 7px 0;
+}
+.nv_menuDw .bugermenu span:nth-child(3){
+    width: 60%;
+}
+.nv_menuDw>.search{
+    display: none;
+}
+
+
+
+
 /*footer*/
 footer{
     background-color: #333;
@@ -234,6 +314,9 @@ footer .f_top .t_menu_circle{
     }      
 }
 @media screen and (max-width: 1200px){
+    header{
+        height: 153px;
+    }
     /**/
     .hd_menu{
         width: 100%;
@@ -385,6 +468,63 @@ footer .f_top .t_menu_circle{
         bottom: auto;
     }
 
+    
+    .downMenu{
+        background-color: #000;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+    .downMenu>h1{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+    .downMenu .dm_logo{
+        margin-top: 0;
+        margin: auto;
+        display: block;
+        width: 138px;
+        padding-top: 55px;
+        background: url('https://dcaf.or.kr/common/resources/images/common/logo2.png') center no-repeat;
+        background-size: auto 35px;
+    }
+    #nvMenuDw ul{
+        display: none;
+    }
+    .nv_menuDw{
+        position:absolute;
+        right: 2%;
+        top: 19px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .nv_menuDw .bugermenu a{
+        display: block;
+        width: 26px;
+        overflow: hidden;
+    }
+    .nv_menuDw .bugermenu span{
+        display: block;
+        padding-top:  2px;
+        background-color: #fff;
+        float: right;
+    }
+    .nv_menuDw .bugermenu span:first-child{
+        width: 100%;
+    }
+    .nv_menuDw .bugermenu span:nth-child(2){
+        width: 80%;
+        margin: 7px 0;
+    }
+    .nv_menuDw .bugermenu span:nth-child(3){
+        width: 60%;
+    }
+    .nv_menuDw>.search{
+        display: none;
+    }
+    
+    
 
 
 

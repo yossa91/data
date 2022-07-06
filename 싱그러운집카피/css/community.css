@@ -136,10 +136,23 @@
     font-size: 15px;
     color: #808080;
 }
+.r_u_1{
+    background: url('https://www.shouse.garden/data/profile/220411_112605_jpg')center no-repeat;
+    background-size: cover;
+}
+.r_u_2{
+    background: url('https://www.shouse.garden/data/profile/210802_143646_jpeg')center no-repeat;
+    background-size: cover;
+}
+.r_u_3{
+    background: url('https://www.shouse.garden/data/profile/220327_101738_jpeg')center no-repeat;
+    background-size: cover;
+}
 .rankWrap>hr{
     opacity: 0.3;
     margin-top: 50px;
 }
+
  /*주간인기스토리*/
 .week_board{
     width: 100%;

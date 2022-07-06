@@ -428,7 +428,6 @@ section{
     background-color: #f8f8f8;
     border-radius: 5px;
     display: flex;
-    flex-shrink: 0;
     align-items: center;
     padding: 10px 20px;
     box-sizing: border-box;
@@ -438,6 +437,7 @@ section{
     margin: 0;
 }
 .rank_img{
+    flex-shrink: 0;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -486,6 +486,7 @@ section{
 }
 .trip>a{
     display: flex;
+    align-items: center;
     padding: 15px 0 15px 40px;
     border-bottom: 1px solid #d9d9d9;
 }
@@ -516,34 +517,32 @@ section{
 }
 .trip_txt>span{
     color: #4d4d4d;
-    padding-right: 22px;
+    padding-right: 20px;
     background-image: url(../img/place.png);
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 12px auto;
+    background-size: 10px auto;
 
 }
 .trip_txt>p{
     font-size: 14px;
+    padding-top: 10px;
     color: #808080;
 }
 .trip_icon>li{
     font-size: 13px;
     padding-left: 18px;
     background-repeat: no-repeat;
-    background-position: left auto;
+    background-position: left center;
     background-size: auto 100%;
-    margin-right: 20px;
-    margin: 0 10px;
     line-height: 14px;
     color: #b3b3b3;
 }
-
-
+.trip_icon>li:not(:last-child){
+    margin-right: 10px;
+}
 .trip_like{
     background-image: url(../img/state_like.png);
-
-
 }
 .trip_scrap{
     background-image: url(../img/state_scrap.png);
