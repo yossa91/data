@@ -1,5 +1,8 @@
 @charset "UTF-8";   
 /*공통*/
+body{
+    font-family: "Noto Sans Korean";
+}
 a{
     color: #000;
 }

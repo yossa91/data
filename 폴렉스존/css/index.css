@@ -39,12 +39,29 @@
         align-items: flex-end;
         z-index: 999;
     }
-    .inttWrap .svg_sub>p{
+    .inttWrap .svg_sub>div>p{
+        display: block;
+        height: 64px;
+        box-sizing: border-box;
+        overflow: hidden;
         font-size: 42px;
         line-height: 64px;
         font-weight: bold;
+        animation-name:upup;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes upup {
+        0% {padding-top: 65px;}
+        100% {padding: 0;}
+    }
+    .inttWrap .btn_more{
+        position: relative;
     }
     .inttWrap .svg_sub a{
+        position: absolute;
+        right: 0;
+        bottom: 0;
         display: block;
         width: 180px;
         font-size: 18px;
@@ -55,7 +72,16 @@
         border-radius: 4px;
         box-sizing: border-box;
         color: #000;
+        animation-name:upbtn;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
     }
+    @keyframes upbtn {
+        0% {bottom: -50px; opacity: 0;}
+        100% {bottom: 0;opacity: 100;}
+    }
+
+
     /*experience*/
     .experience{
         width: 100%;
@@ -126,10 +152,42 @@
         bottom: 30px;
         color: #fff;
     }
+    /*partLink_ 애니메이션------*/
     .partLink>div .pl_left{
         background: url("http://pollexzone.com/images/main/mc2_img1.jpg") center no-repeat;
         background-size: cover;
     }
+    .partLink>div .pl_left>span,.partLink>div .pl_right article>span{
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        z-index: 70;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes left {
+        0% {left: 0; right: 0; top: 0; bottom: 0;}
+        100% {left: 100%; right: 0; top: 0; bottom: 0;}
+    }
+    @keyframes top {
+        0% {left: 0; right: 0; top: 0; bottom: 0;}
+        100% {left: 0; right: 0; top: 100%; bottom: 0;}
+    }
+    @keyframes right {
+        0% {left: 0; right: 0; top: 0; bottom: 0;}
+        100% {left: 0; right: 100%; top: 0; bottom: 0;}
+    }
+    @keyframes bottom {
+        0% {left: 0; right: 0; top: 0; bottom: 0;}
+        100% {left: 0; right: 0; top: 0; bottom: 100%;}
+    }
+
+
+
     .partLink>div .pl_right{
         display: flex;
         justify-content: space-between;
@@ -226,8 +284,16 @@
     .center{
         position: relative;
         padding-top: 55.8333%;
-        background: url("http://pollexzone.com/images/main/mc4_loc2.jpg") center no-repeat;
+        background-image: url("http://pollexzone.com/images/main/mc4_loc2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes opact {
+        0%{opacity: 0;}
+        100%{opacity: 100;}
     }
     .ctWrap{
         position: absolute;
@@ -239,7 +305,11 @@
         justify-content: space-between;
         align-items: flex-end;
     }
+    .ctWrap>article{
+        display: none;
+    }
     .ctWrap .ct_title{
+        display: block;
         padding-right: 50px;
     }
     .ctWrap .ct_title>span{
@@ -343,6 +413,9 @@
         font-weight: bold;
         color: #333;
     }
+    .notiWrap>div ul li a:hover{
+        background-color:rgba(0,0,0,0.05);
+    }
     .notiWrap>div ul li a>span{
         font-size: 13px;
         line-height: 58px;
@@ -421,10 +494,17 @@
     .inttWrap .svg_sub{
         padding: 0 30px;
     }
-    .inttWrap .svg_sub>p{
+    .inttWrap .svg_sub>div>p{
+        height: 50px;
         font-size: 32px;
         line-height: 50px;
-        }
+    }
+    @keyframes upup {
+        0% {padding-top: 50px;}
+        100% {padding: 0;}
+    }
+
+
     /*partLink*/
     .partLink>div{
         padding: 0 30px;
@@ -465,10 +545,16 @@
 }
 @media screen and (max-width: 900px){
     /*introtxt*/
-    .inttWrap .svg_sub>p{
+    .inttWrap .svg_sub>div>p{
+        height: 44px;
         font-size: 26px;
         line-height: 44px;
     }
+    @keyframes upup {
+        0% {padding-top: 44px;}
+        100% {padding: 0;}
+    }
+
     /*partLink*/
     .partLink>div{
         display: block;
@@ -491,9 +577,14 @@
         display: block;
         padding: 0 15px;
     }
-    .inttWrap .svg_sub>p{
+    .inttWrap .svg_sub>div>p{
+        height: 28px;
         font-size: 16px;
         line-height: 28px;
+    }
+    @keyframes upup {
+        0% {padding-top: 28px;}
+        100% {padding: 0;}
     }
     .inttWrap .svg_sub a{
         width: 130px;

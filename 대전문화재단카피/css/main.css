@@ -6,6 +6,7 @@ main{
     padding-top:199px;
     margin: 0;
     overflow: hidden;
+    font-family: "Noto Sans Korean";
 }
 .scWrap{
     width: 1200px;
