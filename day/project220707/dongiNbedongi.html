@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+
+  </style>
+  <title>동기&비동기</title>  
+</head>
+<body>
+동기 비동기 >>>> 콘솔 확인
+
+
+
+  <script>
+
+    call(num2);
+    function call(callback){
+      console.log(1);
+      callback();
+      console.log(3);
+    }
+    function num2(){
+      setTimeout(function(){
+        console.log(2);
+      },2000);
+    }
+
+  </script>
+  
+
+</body>
+</html>
