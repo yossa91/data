@@ -100,3 +100,18 @@ input{
 input:focus{
     outline: none;
 }
+/*--text----*/
+.textBox{
+   background-color: #fff; 
+   margin-top: 20px;
+}
+.textBox text{
+    fill: #8b22ff;
+    font-size: 30px;
+    padding-top: 30px;
+    top:30px;
+    text-anchor:start ;
+    dominant-baseline:Hanging;
+
+
+}

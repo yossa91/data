@@ -21,16 +21,25 @@
         left: 0;
         z-index: -1;
     }
-    .inttWrap .svg_wrap svg{
-        width: 100%;
-        height: 100%;
-    }
+
     .inttWrap .svg_wrap svg>text{
         font-size: 180px;
         font-weight: bold;
         stroke: rgb(109, 220, 109);
         fill: #fff;
+        text-anchor:start ;
+        dominant-baseline:Hanging;
+        stroke-dasharray: 790;
+        animation-name: textMove;
+        animation-duration: 3.5s;
+        animation-fill-mode: forwards;
+        
     }
+    @keyframes textMove{
+        0% {stroke-dashoffset: 790;}
+        100% {stroke-dashoffset: 0;}
+    }
+
     .inttWrap .svg_sub{
         width: 1520px;
         margin: auto;
@@ -72,6 +81,7 @@
         border-radius: 4px;
         box-sizing: border-box;
         color: #000;
+        background-color: #fff;
         animation-name:upbtn;
         animation-duration: 1.5s;
         animation-fill-mode: forwards;
@@ -437,6 +447,7 @@
     }
 
 }
+
 @media screen and (max-width: 1640px){   
     /*introtxt*/
     .inttWrap{

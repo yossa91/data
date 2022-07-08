@@ -1,4 +1,3 @@
-
 //헤더 애니메이션부분
 
 var hov = document.querySelectorAll('.t_menu>li>a');
@@ -55,3 +54,11 @@ centerBtn.forEach(function(el,idx){
     });
 });
 
+//리사이즈 메인 svg 크기조절
+window.onresize = function(){
+    var windwith = document.querySelector('.inttWrap').scrollWidth;
+    if(windwith < 1200){
+        document.querySelector('.svg_wrap>svg').setAttribute('width', windwith-10 +'px');
+    }
+    
+};
