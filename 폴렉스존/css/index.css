@@ -21,7 +21,9 @@
         left: 0;
         z-index: -1;
     }
-
+    .inttWrap .svg_wrap svg{
+        height: 300px;
+    }
     .inttWrap .svg_wrap svg>text{
         font-size: 180px;
         font-weight: bold;
@@ -462,6 +464,7 @@
 
 }
 @media screen and (max-width: 1520px){
+
     /*partLink*/
     .partLink>div{
         width: 100%;
@@ -555,6 +558,9 @@
 
 }
 @media screen and (max-width: 900px){
+    .inttWrap .svg_wrap svg{
+        height: 240px;
+    }
     /*introtxt*/
     .inttWrap .svg_sub>div>p{
         height: 44px;
@@ -583,10 +589,22 @@
    
 }
 @media screen and (max-width: 767px){
+    .inttWrap .svg_wrap svg{
+        height: 180px;
+    }
+    .introtxt{
+        padding-top: 20px;
+    }
     /*introtxt*/
+    .inttWrap{
+        padding-top: 70px;
+    }
     .inttWrap .svg_sub{
         display: block;
         padding: 0 15px;
+    }
+    .inttWrap .svg_sub>div{
+        display: block;
     }
     .inttWrap .svg_sub>div>p{
         height: 28px;
@@ -598,12 +616,14 @@
         100% {padding: 0;}
     }
     .inttWrap .svg_sub a{
+        position: relative;
         width: 130px;
         height: 40px;
         margin-top: 30px;
         line-height: 36px;
         font-size: 11px;
     }
+    
     /*experience*/
     .experience article:first-of-type{
         padding-top: 100%;
@@ -741,4 +761,10 @@
 
 
 
+}
+
+@media screen and (max-width: 620px){
+    .inttWrap .svg_wrap svg{
+        height: 150px;
+    }
 }

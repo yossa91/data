@@ -54,7 +54,13 @@ centerBtn.forEach(function(el,idx){
     });
 });
 
-//리사이즈 메인 svg 크기조절
+// 메인 svg 크기조절
+window.onload = function() {
+var windwith = document.querySelector('.inttWrap').scrollWidth;
+    if(windwith < 1200){
+        document.querySelector('.svg_wrap>svg').setAttribute('width', windwith-10 +'px');
+    }
+}
 window.onresize = function(){
     var windwith = document.querySelector('.inttWrap').scrollWidth;
     if(windwith < 1200){

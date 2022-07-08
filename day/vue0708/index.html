@@ -6,19 +6,52 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
   <title>vueJs</title>  
+
+  <style>
+    .test{
+      color: blueviolet;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+
 </head>
 <body>
 
+
   <div id="firstV">
-    <h1>{{hello}}</h1>
-    <p>{{text}}</p>
+    <ul>
+      <!--el은 임의-->
+      <li v-for = "el in nav">{{el}}</li>
+    </ul>
+    <ul>
+      <li v-for = "id in person">{{id.name}}</li>
+    </ul>
+    <h1 v-bind:style="colors">{{hello}}</h1>
+    <!--v-bind는 속성에 관여한다 생략하고 싶다면 : 를 쓴다.-->
+    <p :class="classt"><a  :href=site> {{text}}</a></p>
+    <h3>{{name}}</h3>
+    <input v-model="name">
+    <input :value="name">
+    <p>{{today}}</p>
+    <button v-on:click="like++">조아용 :9</button> <span>{{like}}</span>
+    <button v-on:click="no">시러여 :(</button> <span>{{unlike}}</span>
+    <!--
+    <ul>
+      <li v-if="i>1" v-for="i in 9">
+        <p v-for=" j in 9">
+          {{i}} * {{j}} = {{i*j}}
+        </p>
+      </li>
+    </ul>
+    -->
+   
+
+
+
+
   </div>
-
-
-
-
-
-
+  
 
 
 
@@ -31,7 +64,27 @@
       el : '#firstV',
       data: {
         hello : "안녕하세요!!",
-        text : "hello vue"
+        text : "hello vue",
+        nav : ['home','about','content','contect'],
+        person : [
+          {name : "selly"},
+          {name : "tom"},
+          {name : "hanna"}
+        ],
+        colors : "color : red",
+        alColors : ['color:green','color:yellow','color:blue'],
+        fWeight:'font-weight:bold',
+        classt : 'test',
+        name : "안녕",
+        today : new Date(),
+        site : "http://google.com",
+        like  : 0,
+        unlike  : 0
+      },
+      methods : {
+        no(){
+          this.unlike += 1;
+        }
       }
     });
   </script>
