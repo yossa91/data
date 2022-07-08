@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  
   <title>vueJs</title>  
 </head>
 <body>
 
-  <div>
-    <h1>안녕하세요</h1>
+  <div id="firstV">
+    <h1>{{hello}}</h1>
+    <p>{{text}}</p>
   </div>
 
 
@@ -24,7 +23,19 @@
 
 
 </body>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
   <script>
-    
+    new Vue({
+      el : '#firstV',
+      data: {
+        hello : "안녕하세요!!",
+        text : "hello vue"
+      }
+    });
   </script>
+
+
+
 </html>
