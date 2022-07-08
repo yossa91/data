@@ -1,6 +1,7 @@
 main{
-    background-color: rgb(86, 45, 124);
+    background-color: rgb(207, 207, 207);
     height: 100vh;
+    padding: 300px 0;
 }
 
 .boxWrap{
@@ -105,6 +106,9 @@ input:focus{
    background-color: #fff; 
    margin-top: 20px;
 }
+.textBox>svg{
+    height: 100%;
+}
 .textBox text{
     fill: #8b22ff;
     font-size: 30px;
@@ -114,4 +118,125 @@ input:focus{
     dominant-baseline:Hanging;
 
 
+}
+/*move----------------*/
+.move{
+    width: 300px;
+}
+.move>svg{
+    height: 100%;
+}
+#line{
+    width: 600px;
+    
+}
+.cls-1{
+    stroke-dasharray: 880;
+    animation-name: textMove;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.cls-2{
+    stroke-dasharray: 880;
+    stroke-dashoffset: 880;
+    animation-name: textMove;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.cls-3{
+    stroke-dasharray: 880;
+    stroke-dashoffset: 880;
+    animation-name: textMove;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes textMove{
+0% {stroke-dashoffset: 880;}
+100% {stroke-dashoffset: 0;}
+}
+
+/*move----------------*/
+
+.bg{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: cadetblue;
+    overflow: hidden;
+}
+
+.bgImg{
+    position:absolute;
+    width:483px ;
+    height: 321px;
+    left: 0;
+    bottom: -321px;
+    width: 800px;
+    background: url('../img/main_photo2.png') left bottom no-repeat;
+    animation-name: upupup;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes upupup{
+    0% {bottom: -321px;}
+    100% {bottom: 0;}
+}
+.bgLine{
+    position:absolute;
+    left:-20px;
+    bottom: -20px;
+    width: 800px;
+}
+.bgLine>svg{
+    height: 100%;
+}
+.bgL-1{
+    stroke-dasharray: 1450;
+    stroke-dashoffset: 1450;
+    animation-name: textMove;
+    animation-delay: 0.3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes textMove{
+    0% {stroke-dashoffset: 1450;}
+    100% {stroke-dashoffset: 0;}
+}
+.bgL-2{
+    width: 0;
+    height: 0;
+    animation-name: nemo;
+    animation-delay: 2s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes nemo{
+    0% {width:0;height:0;}
+    90% {width:12.5px;height:12.5px;}
+    100% {width:11.5px;height:11.5px;}
+}
+.bgL-3{
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120;
+    animation-name: lineup;
+    animation-delay: 2.2s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes lineup{
+    0% {stroke-dashoffset: 120;}
+    100% {stroke-dashoffset: 0;}
+}
+.bgL-4{
+    opacity:0;
+    animation-name: display;
+    animation-delay: 2.6s;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+@keyframes display{
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
