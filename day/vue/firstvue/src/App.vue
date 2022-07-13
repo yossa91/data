@@ -1,18 +1,17 @@
 <template>
-  <div>
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <div>
     <h1>뷰 처음 실행중입니다</h1>
-    <HelloWorld msg="임폴트와 프롬 익스폴트 개념 공부할것"/>
-  </div>
+    <introMe></introMe>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import introMe from './components/introMe.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    introMe
   }
 }
 </script>
