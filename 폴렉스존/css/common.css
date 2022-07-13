@@ -11,19 +11,20 @@
     header{
         width: 100%;
         position: fixed;
+        left: 0;
+        right: 0;
         top: 0;
         z-index: 999;
-    }
-    header>nav{
-        display: flex;
-        position: fixed;
         background-color: #fff;
-        top:-70px;
-        height: 70px;
-        align-items: center;
         animation-name:dwmenu;
         animation-duration: 1s;
         animation-fill-mode: forwards;
+    }
+    header>nav{
+        display: flex;
+        top:-70px;
+        height: 70px;
+        align-items: center;
     }
     @keyframes dwmenu {
         0%   {top: -70px;}
