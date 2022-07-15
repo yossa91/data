@@ -1,12 +1,10 @@
 <template>
-    <div>
-    <h1>뷰 처음 실행중입니다</h1>
-    <introMe></introMe>
-    </div>
+  <h1>hi vue</h1>
+  <introMe></introMe>
 </template>
 
 <script>
-import introMe from './components/introMe.vue';
+import introMe from './components/IntroMe.vue'
 
 export default {
   name: 'App',
