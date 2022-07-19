@@ -1,9 +1,8 @@
-import { createApp, VueElement } from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router/route.js'
+import {router} from './router/router.js'
 
-createApp(App).mount('#app')
-new VueElement({
-    router,
-    render:h => h(App)
-}).$mount('#app')
+
+const app  = createApp(App);
+app.use(router)
+app.mount('#app')
