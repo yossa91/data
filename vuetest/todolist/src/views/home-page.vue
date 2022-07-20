@@ -1,5 +1,5 @@
 <template>
     <div>
-       <h3>home-page</h3>
+       <h3>Hello Vue</h3>
     </div>
 </template>
