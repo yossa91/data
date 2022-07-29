@@ -98,7 +98,6 @@
     }
     /*하단메뉴,슬라이드메뉴*/
     .h_m_wrap .h_m_slideMenu{
-        /*슬라이드메뉴우우우우우ㅜ--------------js추가*/
         display: none;
         position: absolute;
         left: 0;
@@ -115,7 +114,8 @@
         color: #333;
     }
     .h_m_wrap .h_m_slideMenu>li>a:hover{
-        color: #747474;
+        color: #fff;
+        background-color: #659E35;
     }
     /*footer 푸터*/
     footer{
@@ -159,6 +159,10 @@
         padding-top: 25px;
         opacity: 0.5;
     }
+    /**/
+    .mobileMain, .mSideMenu{
+        display: none;
+    }
 
 
 
@@ -183,29 +187,6 @@
     .h_m_wrap>ul>li>a:hover{
         color: #659E35;
     }
-    /*하단메뉴,슬라이드메뉴*/
-    .h_m_wrap .h_m_slideMenu{
-        /*슬라이드메뉴우우우우우ㅜ--------------js추가*/
-        display: none;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 71px;
-        text-align: center;
-        padding:20px 0 40px;
-        background-color: #fff;
-    }
-    .h_m_wrap .h_m_slideMenu>li>a{
-        display: block;
-        font-size: 20px;
-        padding: 10px 0;
-        color: #333;
-    }
-    .h_m_wrap .h_m_slideMenu>li>a:hover{
-        color: #747474;
-    }     
-
-
 
 }
 @media screen and (max-width: 960px){
@@ -262,8 +243,6 @@
 
 
 
-
-
 }
 @media screen and (max-width: 730px){
     /*header*/
@@ -273,13 +252,193 @@
 
     
 
-
-
-
-
 }
 
 
 @media screen and (max-width: 540px){
+    .headTop{
+        display: none;
+    }
+    .hdeadMid{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .mobileMain{
+        display: block;
+        width: 100vw;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 70;
+    }
+    /*mobile hdeader 첫줄*/
+    .mMainHeader{
+        width: 100%;
+        height: 65px;
+        border-bottom: 1px solid #659E35;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mMainHeaderLang{
+        border: 0;
+        background: url('../img/icon_bot.png')right 10px center no-repeat;
+        width: 80px;
+        padding:0 0 0 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #333;
+        outline: none;
+        -webkit-appearance:none; /* for chrome */
+        -moz-appearance:none; /*for firefox*/
+        appearance:none;
+    }
+    .mMainHeaderLogo{
+        width: 70px;
+        height: 40px;
+        background: url('../img/greensing_logo.png')center no-repeat;
+        background-size: cover;
+    }
+    .mMainHeaderMenu{
+        width: 50px;
+        height: 50px;
+        background: url('../img/bugerMenu.png')right 15px center no-repeat;
+        background-size: 20px auto;
+        transition: 0.2s;
+    }
+    /**/
+    .mMainSearch{
+        width: 100%;
+        height: 45px;
+        border-bottom: 1px solid #333;
+        background-color: #fff;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mMSlist{
+        width: 35%;
+        height:100%;
+        border-right: 1px solid #333;
+    }
+    .mMainSearchPosition{
+        border: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        background: url('../img/icon_bot.png')right 15px center no-repeat;
+        -webkit-appearance:none; /* for chrome */
+        -moz-appearance:none; /*for firefox*/
+        appearance:none;
+        padding: 0 15px;
+        box-sizing: border-box;
+        outline: none;
+    }
+    .mMStext{
+        width: 65%;
+        height: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .mMStext>input{
+        width: 100%;
+        font-size: 14px;
+        line-height: 43px;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        outline: none;
+    }
+    .mMStext>input:focus{
+        outline: none;
+    }
+    /*사이드 메뉴*/
+    .mSideMenu{
+        display: block;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        top:66px;
+        left: 0;
+        right: 0;
+        z-index: 90;
+        transition: 0.3s;
+        background-color: #fff;
+    }
+    .mSideMenu>h3{
+        border-bottom: 1px solid #659E35;
+    }
+    .mSideMenu>h3>a{
+        color:#659E35 ;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 75px;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+    .mSideMenuSubT{
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 65px;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+    .mSideMenuSub{
+        height: 0;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+    .mSideMenuSub>li>a{
+        display: block;
+        padding-left: 70px;
+        font-size: 18px;
+        line-height: 50px;
+        color: #333;
+        background-color: #E9E9E9;
+    }
 
+    /*하단 버튼들*/
+    .mBtn>article{
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 70;
+    }
+    .mBtn>.mBtnCall{
+        background: #C61E1E url('../img/m_main_ca.png')center no-repeat;
+        background-size: 40px auto;
+        bottom: 150px;
+        left: 15px;
+    }
+    .mBtn>.mBtnQna{
+        background: #fff url('../img/m_main_qna.png')center no-repeat;
+        background-size: 40px auto;
+        bottom: 80px;
+        left: 15px;
+    }
+    .mBtn>.mBtnUser{
+        background: #ffffff url('../img/m_main_us.png')center no-repeat;
+        background-size: 40px auto;
+        bottom: 220px;
+        right: 15px;
+    }
+    .mBtn>.mBtnReplace{
+        background: #fff url('../img/m_main_re.png')center no-repeat;
+        background-size: 40px auto;
+        bottom: 150px;
+        right: 15px;
+    }
+    .mBtn>.mBtnPosition{
+        background: #fff url('../img/m_main_lo.png')center no-repeat;
+        background-size: 40px auto;
+        bottom: 80px;
+        right: 15px;
+    }
 }
