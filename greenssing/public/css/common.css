@@ -1,5 +1,7 @@
+
 @charset "UTF-8";
-    body{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+body{
         font-family: 'Noto Sans KR', sans-serif , 'arial'; 
 
         color: #333;
@@ -89,6 +91,7 @@
         font-weight: 500;
         color: #333;
         padding: 10px 0;
+        transition: 0.2s;
     }
     .h_m_wrap>ul>li:last-of-type{
         padding-right: 0;
@@ -109,7 +112,7 @@
     }
     .h_m_wrap .h_m_slideMenu>li>a{
         display: block;
-        font-size: 20px;
+        font-size: 18px;
         padding: 10px 0;
         color: #333;
     }
@@ -119,7 +122,6 @@
     }
     /*footer 푸터*/
     footer{
-        margin-top: 150px;
         background-color: #333;
         color: #fff;
         font-weight: 100;
@@ -132,15 +134,21 @@
     .ftTop>ul{
         display: flex;
         padding: 20px 0;
+        flex-wrap: wrap;
     }
     .ftTop>ul>li{
-
+        display: block;
+        flex-shrink: 0;
     }
     .ftTop>ul>li>a{
         color: #fff;
         font-size: 16px;
         line-height: 25px;
         padding: 0 15px;
+        transition: 0.2s;
+    }
+    .ftTop>ul>li>a:hover{
+        color: #747474;
     }
     .ftTop>ul>li:first-of-type>a{
         padding-left: 0;
@@ -168,7 +176,7 @@
 
 
 
-@media screen and (max-width: 1270px){
+@media screen and (max-width: 1300px){
     /*하단메뉴,메인메뉴*/
     .h_m_wrap>ul>li{
         position: relative;
@@ -233,9 +241,6 @@
         padding: 10px 0;
     }
     /*footer*/
-    footer{
-        margin-top: 100px;
-    }
     .ftBot{
         padding: 40px 0;
         background: none;
@@ -259,12 +264,24 @@
     .headTop{
         display: none;
     }
-    .hdeadMid{
+    /*footer*/
+    .ftTop>ul>li>a{
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    /**/
+    .ftBot li{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .ftBot p{
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    .h_m_wrap {
         display: none;
     }
-    footer{
-        display: none;
-    }
+    /**/
     .mobileMain{
         display: block;
         width: 100vw;
@@ -278,6 +295,7 @@
         width: 100%;
         height: 65px;
         border-bottom: 1px solid #659E35;
+        box-sizing: border-box;
         background-color: #fff;
         display: flex;
         justify-content: space-between;
@@ -309,53 +327,7 @@
         background-size: 20px auto;
         transition: 0.2s;
     }
-    /**/
-    .mMainSearch{
-        width: 100%;
-        height: 45px;
-        border-bottom: 1px solid #333;
-        background-color: #fff;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .mMSlist{
-        width: 35%;
-        height:100%;
-        border-right: 1px solid #333;
-    }
-    .mMainSearchPosition{
-        border: 0;
-        width: 100%;
-        height: 100%;
-        font-size: 14px;
-        background: url('../img/icon_bot.png')right 15px center no-repeat;
-        -webkit-appearance:none; /* for chrome */
-        -moz-appearance:none; /*for firefox*/
-        appearance:none;
-        padding: 0 15px;
-        box-sizing: border-box;
-        outline: none;
-    }
-    .mMStext{
-        width: 65%;
-        height: 100%;
-        padding: 0 15px;
-        box-sizing: border-box;
-    }
-    .mMStext>input{
-        width: 100%;
-        font-size: 14px;
-        line-height: 43px;
-        border: 0;
-        margin: 0;
-        padding: 0;
-        outline: none;
-    }
-    .mMStext>input:focus{
-        outline: none;
-    }
+    
     /*사이드 메뉴*/
     .mSideMenu{
         display: block;
@@ -403,42 +375,5 @@
         background-color: #E9E9E9;
     }
 
-    /*하단 버튼들*/
-    .mBtn>article{
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        position: fixed;
-        z-index: 70;
-    }
-    .mBtn>.mBtnCall{
-        background: #C61E1E url('../img/m_main_ca.png')center no-repeat;
-        background-size: 40px auto;
-        bottom: 150px;
-        left: 15px;
-    }
-    .mBtn>.mBtnQna{
-        background: #fff url('../img/m_main_qna.png')center no-repeat;
-        background-size: 40px auto;
-        bottom: 80px;
-        left: 15px;
-    }
-    .mBtn>.mBtnUser{
-        background: #ffffff url('../img/m_main_us.png')center no-repeat;
-        background-size: 40px auto;
-        bottom: 220px;
-        right: 15px;
-    }
-    .mBtn>.mBtnReplace{
-        background: #fff url('../img/m_main_re.png')center no-repeat;
-        background-size: 40px auto;
-        bottom: 150px;
-        right: 15px;
-    }
-    .mBtn>.mBtnPosition{
-        background: #fff url('../img/m_main_lo.png')center no-repeat;
-        background-size: 40px auto;
-        bottom: 80px;
-        right: 15px;
-    }
+    
 }

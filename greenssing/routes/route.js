@@ -11,14 +11,17 @@ const {check, validationResult} = require('express-validator');
 
 router.use(expressLayouts);
 
-//메인페이지 연결
+//메인page
 router.get('/', (req,res) => {
     res.render('main.ejs');
 });
-
-
-router.get('/intro', (req,res) => {
-  res.render('Seomun_intro.ejs');
+//그린씽안내 _ 그린씽이란page
+router.get('/about', (req,res) => {
+  res.render('about.ejs');
+});
+//그린씽안내 _ 이용안내page
+router.get('/guide1', (req,res) => {
+  res.render('useGuide.ejs');
 });
 
 

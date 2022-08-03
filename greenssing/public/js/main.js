@@ -39,17 +39,31 @@ var menuList = document.querySelectorAll('.h_m_slideMenu');
             }else{
                 for(var i = 0; menuList.length > i ; i++ ){
                     menuList[i].style.display = 'none';
+                    menuBtn[i].style.color = '#333';
                 }
                 menuList[idx].style.display =  'block';
+                menuBtn[idx].style.color = '#659E35';
             }
         });
     });
     menuList.forEach((el, idx) => {
         menuList[idx].addEventListener('mouseleave', () => {
             menuList[idx].style.display =  'none';
+            menuBtn[idx].style.color = '#333';
         });
     });
 
+    /*메인 모바일 시 지도 뜨면서 footer 사라지게 */
+    var mainMap =  document.querySelector('#mapMain');
+    var foo = document.querySelector('footer');
+
+    window.addEventListener('resize', () => {
+        if(mainMap.clientHeight > 100){ 
+            foo.style.display = 'none';
+        }else{
+            foo.style.display = 'block';
+        }
+    });
 
 
 
